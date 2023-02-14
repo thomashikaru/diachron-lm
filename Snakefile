@@ -15,7 +15,7 @@ rule train_transformer_bpe:
     input:
         "data/coha/{decade}/ru.train"
     output:
-        "models/bpe_codes/30k/ru.codes"
+        "models/bpe_codes/30k/{decade}/ru.codes"
     resources:
         mem_mb=16000,
         runtime=60
@@ -25,10 +25,10 @@ rule train_transformer_bpe:
         "logs/train_bpe_{decade}.log"
     shell:
         """
-        OUTPATH="models/bpe_codes/30k"  # path where processed files will be stored
+        OUTPATH="models/bpe_codes/30k/{wildcards.decade}"  # path where processed files will be stored
         FASTBPE=fastBPE/fast  # path to the fastBPE tool
         NUM_OPS=30000
-        INPUT_DIR="data/coha/{decade}"
+        INPUT_DIR="data/coha/{wildcards.decade}"
 
         # create output path
         mkdir -p $OUTPATH
@@ -78,20 +78,20 @@ rule apply_transformer_bpe:
 # preprocess/binarize each decade's data
 rule preprocess_data_transformer:
     input:
-        "ru_data/russian_corpora/counterfactual/transformer/ru-bpe/ru.train",
-        "ru_data/russian_corpora/counterfactual/transformer/ru-bpe/ru.test",
-        "ru_data/russian_corpora/counterfactual/transformer/ru-bpe/ru.valid",
+        "data/coha/{decade}/en-bpe/en.train",
+        "data/coha/{decade}/en-bpe/en.valid",
+        "data/coha/{decade}/en-bpe/en.test",
     output:
-        "ru_data/russian_corpora/counterfactual/transformer/ru-bin/train.bin",
-        "ru_data/russian_corpora/counterfactual/transformer/ru-bin/test.bin",
-        "ru_data/russian_corpora/counterfactual/transformer/ru-bin/valid.bin",
+        "data/coha/{decade}/en-bin/train.bin",
+        "data/coha/{decade}/en-bin/valid.bin",
+        "data/coha/{decade}/en-bin/test.bin",
     resources:
         mem_mb=16000,
         runtime=120
     conda:
         "rus"
     log:
-        "logs/preprocess_data.log"
+        "logs/preprocess_data_{decade}.log"
     shell:
         """
         data_dir="ru_data/russian_corpora/counterfactual/transformer/ru-bpe"
@@ -109,11 +109,11 @@ rule preprocess_data_transformer:
 # train a Transformer language model on each decade's data
 rule train_transformer_lm:
     input:
-        "ru_data/russian_corpora/counterfactual/transformer/ru-bin/train.bin",
-        "ru_data/russian_corpora/counterfactual/transformer/ru-bin/test.bin",
-        "ru_data/russian_corpora/counterfactual/transformer/ru-bin/valid.bin",
+        "data/coha/{decade}/en-bin/train.bin",
+        "data/coha/{decade}/en-bin/valid.bin",
+        "data/coha/{decade}/en-bin/test.bin",
     output:
-        "models/transformer/checkpoint_last.pt"
+        "models/{decade}/checkpoint_last.pt"
     resources:
         mem_mb=20000,
         runtime=2160,
@@ -121,11 +121,11 @@ rule train_transformer_lm:
     conda:
         "rus"
     log:
-        "logs/train_transformer.log"
+        "logs/train_transformer_{decade}.log"
     shell:
         """
-        DATA_DIR="ru_data/russian_corpora/counterfactual/transformer/ru-bin"
-        SAVE_DIR="models/transformer"
+        DATA_DIR="data/coha/{wildcards.decade}/en-bin"
+        SAVE_DIR="models/{wildcards.decade}"
         default=1
         RANDOM_SEED="${{3:-$default}}"
 
