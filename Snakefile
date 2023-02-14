@@ -10,12 +10,38 @@ rule download_coha:
         wget https://rserve.dataverse.harvard.edu/cgi-bin/zipdownload?b12-f0308d1f48b2
         """
 
+rule unzip_coha:
+    output:
+    resources:
+        mem_mb=4000,
+        runtime=720
+    shell:
+        """
+        cd /om2/user/thclark/coha
+        unzip dataverse_files.zip
+        cd dataverse_files
+        unzip text_*.zip
+        """
+
+rule clean_and_sample:
+    input:
+        "data/coha/dataverse_files/{decade}.txt"
+    output:
+        "data/coha/{decade}/en.train"
+    resources:
+        mem_mb=4000,
+        runtime=720
+    shell:
+        """
+        """
+
+
 # train bpe on each decade's data
 rule train_transformer_bpe:
     input:
-        "data/coha/{decade}/ru.train"
+        "data/coha/{decade}/en.train"
     output:
-        "models/bpe_codes/30k/{decade}/ru.codes"
+        "models/bpe_codes/30k/{decade}/en.codes"
     resources:
         mem_mb=16000,
         runtime=60
