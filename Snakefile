@@ -7,7 +7,7 @@ rule download_coha:
         """
         mkdir -p /om2/user/thclark/coha
         cd /om2/user/thclark/coha
-        wget https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/8SRSYK#
+        wget https://rserve.dataverse.harvard.edu/cgi-bin/zipdownload?b12-f0308d1f48b2
         """
 
 # train bpe on each decade's data
