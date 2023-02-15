@@ -4,7 +4,7 @@ DECADE_PREFIXES = ["181", "182", "183", "184", "185", "186", "187", "188", "189"
 
 rule download_coha:
     output:
-        "/data/coha/dataverse_files.zip"
+        "data/coha/dataverse_files.zip"
     resources:
         mem_mb=1000,
         runtime=720
@@ -17,10 +17,10 @@ rule download_coha:
 
 rule unzip_coha:
     input:
-        "/data/coha/dataverse_files.zip"
+        "data/coha/dataverse_files.zip"
     output:
-        "/data/coha/dataverse_files/fic_1810_8641.txt",
-        "/data/coha/dataverse_files/fic_2000_27727.txt"
+        "data/coha/dataverse_files/fic_1810_8641.txt",
+        "data/coha/dataverse_files/fic_2000_27727.txt"
     resources:
         mem_mb=1000,
         runtime=720
@@ -35,11 +35,11 @@ rule unzip_coha:
 
 rule make_dirs:
     input:
-        "/data/coha/dataverse_files/fic_1810_8641.txt",
-        "/data/coha/dataverse_files/fic_2000_27727.txt"
+        "data/coha/dataverse_files/fic_1810_8641.txt",
+        "data/coha/dataverse_files/fic_2000_27727.txt"
     output:
-        "/data/coha/dataverse_files/1810/fic_1810_8641.txt",
-        "/data/coha/dataverse_files/2000/fic_2000_27727.txt",
+        "data/coha/dataverse_files/1810/fic_1810_8641.txt",
+        "data/coha/dataverse_files/2000/fic_2000_27727.txt",
     shell:
         """
         cd data/coha/dataverse_files
