@@ -1,7 +1,12 @@
+DECADE_PREFIXES = ["181", "182", "183", "184", "185", "186", "187", "188", "189", "190", 
+    "191", "192", "193", "194", "195", "196", "197", "198", "199", "200"]
+
+
 rule download_coha:
     output:
+        "/data/coha/dataverse_files.zip"
     resources:
-        mem_mb=4000,
+        mem_mb=1000,
         runtime=720
     shell:
         """
@@ -11,23 +16,96 @@ rule download_coha:
         """
 
 rule unzip_coha:
+    input:
+        "/data/coha/dataverse_files.zip"
     output:
+        "/data/coha/dataverse_files/fic_1810_8641.txt",
+        "/data/coha/dataverse_files/fic_2000_27727.txt"
     resources:
-        mem_mb=4000,
+        mem_mb=1000,
         runtime=720
     shell:
         """
-        cd /om2/user/thclark/coha
-        unzip dataverse_files.zip
+        cd data/coha
+        mkdir -p dataverse_files
+        unzip dataverse_files.zip -d dataverse_files
         cd dataverse_files
-        unzip text_*.zip
+        unzip 'text_*.zip'
         """
+
+rule make_dirs:
+    input:
+        "/data/coha/dataverse_files/fic_1810_8641.txt",
+        "/data/coha/dataverse_files/fic_2000_27727.txt"
+    output:
+        "/data/coha/dataverse_files/1810/fic_1810_8641.txt",
+        "/data/coha/dataverse_files/2000/fic_2000_27727.txt",
+    shell:
+        """
+        cd data/coha/dataverse_files
+        mkdir -p 1810
+        mv *_181*_*.txt 1810
+        mkdir -p 1820
+        mv *_182*_*.txt 1820
+        mkdir -p 1830
+        mv *_183*_*.txt 1830
+        mkdir -p 1840
+        mv *_184*_*.txt 1840
+        mkdir -p 1850
+        mv *_185*_*.txt 1850
+        mkdir -p 1860
+        mv *_186*_*.txt 1860
+        mkdir -p 1870
+        mv *_187*_*.txt 1870
+        mkdir -p 1880
+        mv *_188*_*.txt 1880
+        mkdir -p 1890
+        mv *_189*_*.txt 1890
+        mkdir -p 1900
+        mv *_190*_*.txt 1900
+        mkdir -p 1910
+        mv *_191*_*.txt 1910
+        mkdir -p 1920
+        mv *_192*_*.txt 1920
+        mkdir -p 1930
+        mv *_193*_*.txt 1930
+        mkdir -p 1940
+        mv *_194*_*.txt 1940
+        mkdir -p 1950
+        mv *_195*_*.txt 1950
+        mkdir -p 1960
+        mv *_196*_*.txt 1960
+        mkdir -p 1970
+        mv *_197*_*.txt 1970
+        mkdir -p 1980
+        mv *_198*_*.txt 1980
+        mkdir -p 1990
+        mv *_199*_*.txt 1990
+        mkdir -p 2000
+        mv *_200*_*.txt 2000
+        """
+
+rule get_coha_stats:
+    input:
+    output:
+    run:
+        import glob
+
+        f = open("data/coha/stats.txt")
+
+        for decade_prefix in DECADE_PREFIXES:
+            filenames = glob.glob(f"*_{decade_prefix}*_*.txt")
+
+
+        f.close()
 
 rule clean_and_sample:
     input:
         "data/coha/dataverse_files/{decade}.txt"
     output:
-        "data/coha/{decade}/en.train"
+        "data/coha/{decade}/en.train",
+        "data/coha/{decade}/en.test",
+        "data/coha/{decade}/en.valid",
     resources:
         mem_mb=4000,
         runtime=720
