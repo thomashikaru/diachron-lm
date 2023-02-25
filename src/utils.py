@@ -71,11 +71,14 @@ def iter_coha_decade(decade: int):
 
 def process_document(document):
     # remove parentheses
+    document = document.lower()
     document = re.sub("\s\([^\)]*\)", " ", document)
     document = re.sub("--\s", " ", document)
     document = re.sub("\s+", " ", document)
+    document = re.sub("@ @ @ @ @ @ @ @ @ @", "UNK", document)
 
     sents = sentence_splitter.tokenize(document)
+    sents = list(filter(lambda x: len(x.split()) >= 4, sents))
     return sents
 
 

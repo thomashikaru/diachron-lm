@@ -1,6 +1,6 @@
 DECADE_PREFIXES = ["181", "182", "183", "184", "185", "186", "187", "188", "189", "190", 
     "191", "192", "193", "194", "195", "196", "197", "198", "199", "200"]
-
+DECADES = list(range(1810, 2010, 10))
 
 rule download_coha:
     output:
@@ -96,28 +96,29 @@ rule get_coha_stats:
         for decade_prefix in DECADE_PREFIXES:
             filenames = glob.glob(f"*_{decade_prefix}*_*.txt")
 
-
         f.close()
 
 rule clean_and_sample:
     input:
         "data/coha/dataverse_files/{decade}.txt"
     output:
-        "data/coha/{decade}/en.train",
-        "data/coha/{decade}/en.test",
-        "data/coha/{decade}/en.valid",
+        "data/coha/lm_data/{decade}/en.train",
+        "data/coha/lm_data/{decade}/en.test",
+        "data/coha/lm_data/{decade}/en.valid",
     resources:
         mem_mb=4000,
         runtime=720
     shell:
         """
+        cd src
+        python sample_coha.py --decade {wildcards.decade} --output_dir ../data/coha/lm_data/{wildcards.decade}
         """
 
 
 # train bpe on each decade's data
 rule train_transformer_bpe:
     input:
-        "data/coha/{decade}/en.train"
+        "data/coha/lm_data/{decade}/en.train"
     output:
         "models/bpe_codes/30k/{decade}/en.codes"
     resources:
@@ -145,14 +146,14 @@ rule train_transformer_bpe:
 # apply bpe to each decade's data
 rule apply_transformer_bpe:
     input:
-        "data/coha/{decade}/en.train",
-        "data/coha/{decade}/en.valid",
-        "data/coha/{decade}/en.test",
-        "models/bpe_codes/30k/en.codes"
+        "data/coha/lm_data/{decade}/en.train",
+        "data/coha/lm_data/{decade}/en.valid",
+        "data/coha/lm_data/{decade}/en.test",
+        "models/bpe_codes/30k/{decade}/en.codes"
     output:
-        "data/coha/{decade}/en-bpe/en.train",
-        "data/coha/{decade}/en-bpe/en.valid",
-        "data/coha/{decade}/en-bpe/en.test",
+        "data/coha/lm_data/{decade}/en-bpe/en.train",
+        "data/coha/lm_data/{decade}/en-bpe/en.valid",
+        "data/coha/lm_data/{decade}/en-bpe/en.test",
     resources:
         mem_mb=16000,
         runtime=60
@@ -162,10 +163,10 @@ rule apply_transformer_bpe:
         "logs/apply_bpe_{decade}.log"
     shell:
         """
-        BPE_CODES="models/bpe_codes/30k"  # path where processed files will be stored
+        BPE_CODES="models/bpe_codes/30k/{wildcards.decade}"  # path where processed files will be stored
         FASTBPE="fastBPE/fast"  # path to the fastBPE tool
-        INPUT_DIR="ru_data/russian_corpora/counterfactual/transformer"
-        OUT_DIR="ru_data/russian_corpora/counterfactual/transformer/ru-bpe"
+        INPUT_DIR="data/coha/lm_data/{wildcards.decade}"
+        OUT_DIR="data/coha/lm_data/{wildcards.decade}/en-bpe"
 
         # create output path
         mkdir -p $OUT_DIR
@@ -182,13 +183,13 @@ rule apply_transformer_bpe:
 # preprocess/binarize each decade's data
 rule preprocess_data_transformer:
     input:
-        "data/coha/{decade}/en-bpe/en.train",
-        "data/coha/{decade}/en-bpe/en.valid",
-        "data/coha/{decade}/en-bpe/en.test",
+        "data/coha/lm_data/{decade}/en-bpe/en.train",
+        "data/coha/lm_data/{decade}/en-bpe/en.valid",
+        "data/coha/lm_data/{decade}/en-bpe/en.test",
     output:
-        "data/coha/{decade}/en-bin/train.bin",
-        "data/coha/{decade}/en-bin/valid.bin",
-        "data/coha/{decade}/en-bin/test.bin",
+        "data/coha/lm_data/{decade}/en-bin/train.bin",
+        "data/coha/lm_data/{decade}/en-bin/valid.bin",
+        "data/coha/lm_data/{decade}/en-bin/test.bin",
     resources:
         mem_mb=16000,
         runtime=120
@@ -198,13 +199,13 @@ rule preprocess_data_transformer:
         "logs/preprocess_data_{decade}.log"
     shell:
         """
-        data_dir="ru_data/russian_corpora/counterfactual/transformer/ru-bpe"
-        out_dir="ru_data/russian_corpora/counterfactual/transformer/ru-bin"
+        data_dir="data/coha/lm_data/{wildcards.decade}/en-bpe"
+        out_dir="data/coha/lm_data/{wildcards.decade}/en-bin"
         fairseq-preprocess \
                 --only-source \
-                --trainpref $data_dir/ru.train \
-                --validpref $data_dir/ru.valid \
-                --testpref $data_dir/ru.test \
+                --trainpref $data_dir/en.train \
+                --validpref $data_dir/en.valid \
+                --testpref $data_dir/en.test \
                 --destdir $out_dir \
                 --bpe fastbpe \
                 --workers 20
@@ -213,9 +214,9 @@ rule preprocess_data_transformer:
 # train a Transformer language model on each decade's data
 rule train_transformer_lm:
     input:
-        "data/coha/{decade}/en-bin/train.bin",
-        "data/coha/{decade}/en-bin/valid.bin",
-        "data/coha/{decade}/en-bin/test.bin",
+        "data/coha/lm_data/{decade}/en-bin/train.bin",
+        "data/coha/lm_data/{decade}/en-bin/valid.bin",
+        "data/coha/lm_data/{decade}/en-bin/test.bin",
     output:
         "models/{decade}/checkpoint_last.pt"
     resources:
@@ -228,12 +229,12 @@ rule train_transformer_lm:
         "logs/train_transformer_{decade}.log"
     shell:
         """
-        DATA_DIR="data/coha/{wildcards.decade}/en-bin"
+        DATA_DIR="data/coha/lm_data/{wildcards.decade}/en-bin"
         SAVE_DIR="models/{wildcards.decade}"
         default=1
         RANDOM_SEED="${{3:-$default}}"
 
-        mkdir -p models/transformer
+        mkdir -p models/{wildcards.decade}
 
         fairseq-train --task language_modeling \
             $DATA_DIR \
