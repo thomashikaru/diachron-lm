@@ -114,6 +114,9 @@ rule clean_and_sample:
         python sample_coha.py --decade {wildcards.decade} --output_dir ../data/coha/lm_data/{wildcards.decade}
         """
 
+rule clean_and_sample_all:
+    input:
+        expand("data/coha/lm_data/{decade}/en.{suff}", decade=DECADES, suff=["train", "test", "valid"])
 
 # train bpe on each decade's data
 rule train_transformer_bpe:
