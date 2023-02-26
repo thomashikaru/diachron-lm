@@ -43,45 +43,45 @@ rule make_dirs:
         """
         cd data/coha/dataverse_files
         mkdir -p 1810
-        mv *_181*_*.txt 1810
+        files=( *_181*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1810 --
         mkdir -p 1820
-        mv *_182*_*.txt 1820
+        files=( *_182*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1820 --
         mkdir -p 1830
-        mv *_183*_*.txt 1830
+        files=( *_183*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1830 --
         mkdir -p 1840
-        mv *_184*_*.txt 1840
+        files=( *_184*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1840 --
         mkdir -p 1850
-        mv *_185*_*.txt 1850
+        files=( *_185*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1850 --
         mkdir -p 1860
-        mv *_186*_*.txt 1860
+        files=( *_186*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1860 --
         mkdir -p 1870
-        mv *_187*_*.txt 1870
+        files=( *_187*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1870 --
         mkdir -p 1880
-        mv *_188*_*.txt 1880
+        files=( *_188*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1880 --
         mkdir -p 1890
-        mv *_189*_*.txt 1890
+        files=( *_189*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1890 --
         mkdir -p 1900
-        mv *_190*_*.txt 1900
+        files=( *_190*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1900 --
         mkdir -p 1910
-        mv *_191*_*.txt 1910
+        files=( *_191*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1910 --
         mkdir -p 1920
-        mv *_192*_*.txt 1920
+        files=( *_192*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1920 --
         mkdir -p 1930
-        mv *_193*_*.txt 1930
+        files=( *_193*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1930 --
         mkdir -p 1940
-        mv *_194*_*.txt 1940
+        files=( *_194*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1940 --
         mkdir -p 1950
-        mv *_195*_*.txt 1950
+        files=( *_195*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1950 --
         mkdir -p 1960
-        mv *_196*_*.txt 1960
+        files=( *_196*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1960 --
         mkdir -p 1970
-        mv *_197*_*.txt 1970
+        files=( *_197*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1970 --
         mkdir -p 1980
-        mv *_198*_*.txt 1980
+        files=( *_198*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1980 --
         mkdir -p 1990
-        mv *_199*_*.txt 1990
+        files=( *_199*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 1990 --
         mkdir -p 2000
-        mv *_200*_*.txt 2000
+        files=( *_200*_*.txt); [ -f $files ] && echo ${files[*]} | xargs mv -t 2000 --
         """
 
 rule get_coha_stats:
