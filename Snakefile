@@ -19,7 +19,7 @@ rule unzip_coha:
     input:
         "data/coha/dataverse_files.zip"
     output:
-        "data/coha/dataverse_files/unzip_coha.done
+        "data/coha/dataverse_files/unzip_coha.done"
     resources:
         mem_mb=1000,
         runtime=720
