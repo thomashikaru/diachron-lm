@@ -111,7 +111,7 @@ rule clean_and_sample:
     shell:
         """
         cd src
-        python sample.py --decade {wildcards.decade} --output_dir ../data/coha/lm_data/{wildcards.decade}
+        python sample.py --decade {wildcards.decade} --output_dir ../data/coha/lm_data/{wildcards.decade} --data_dir ../data/coha/dataverse_files
         """
 
 rule clean_and_sample_all:

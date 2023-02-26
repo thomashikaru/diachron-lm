@@ -3,8 +3,6 @@ import glob
 import re
 from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktParameters
 
-DATA_PATH = "/Users/thomasclark/mit/diachron-lm/data/coha/dataverse_files"
-
 punkt_param = PunktParameters()
 punkt_param.abbrev_types = set(
     [
@@ -48,7 +46,7 @@ def iter_coha_file(filename: str):
             yield line.strip()
 
 
-def iter_coha_decade(decade: int):
+def iter_coha_decade(decade: int, data_dir: str):
     """iterate over COHA documents given a decade
 
     Args:
@@ -58,7 +56,7 @@ def iter_coha_decade(decade: int):
         str: an individual document
     """
     assert decade in range(1810, 2010, 10), "invalid decade"
-    filenames = glob.iglob(f"{DATA_PATH}/{decade}/*.txt")
+    filenames = glob.iglob(f"{data_dir}/{decade}/*.txt")
     for filename in filenames:
         with open(filename) as f:
             header = f.readline()
@@ -83,5 +81,7 @@ def process_document(document):
 
 
 if __name__ == "__main__":
-    for doc in iter_coha_decade(1810):
+    for doc in iter_coha_decade(
+        1810, "/Users/thomasclark/mit/diachron-lm/data/coha/dataverse_files"
+    ):
         print(*process_document(doc), sep="\n")

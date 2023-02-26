@@ -13,16 +13,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--decade", type=int)
     parser.add_argument("--output_dir")
+    parser.add_argument("--data_dir")
     parser.add_argument("--train_size", type=float, default=0.8)
     args = parser.parse_args()
 
-    train_f = open(f"{args.output_dir}/en.train", "w")
-    valid_f = open(f"{args.output_dir}/en.valid", "w")
-    test_f = open(f"{args.output_dir}/en.test", "w")
-
     data = []
 
-    for doc in utils.iter_coha_decade(args.decade):
+    for doc in utils.iter_coha_decade(args.decade, args.data_dir):
         sents = utils.process_document(doc)
         data.append(pd.DataFrame({"text": sents}))
     df = pd.concat(data)
