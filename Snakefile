@@ -30,6 +30,7 @@ rule unzip_coha:
         unzip dataverse_files.zip -d dataverse_files
         cd dataverse_files
         unzip 'text_*.zip'
+        touch unzip_coha.done
         """
 
 rule make_dirs:
