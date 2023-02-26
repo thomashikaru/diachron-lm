@@ -27,7 +27,14 @@ if __name__ == "__main__":
     train_df, test_df = train_test_split(df, train_size=args.train_size)
     valid_df, test_df = train_test_split(test_df, train_size=0.5)
 
-    train_df.to_csv(f"{args.output_dir}/en.train", header=False, index=False, sep="\t")
-    valid_df.to_csv(f"{args.output_dir}/en.valid", header=False, index=False, sep="\t")
-    test_df.to_csv(f"{args.output_dir}/en.test", header=False, index=False, sep="\t")
+    # train_df.to_csv(f"{args.output_dir}/en.train", header=False, index=False)
+    # valid_df.to_csv(f"{args.output_dir}/en.valid", header=False, index=False)
+    # test_df.to_csv(f"{args.output_dir}/en.test", header=False, index=False)
+
+    with open(f"{args.output_dir}/en.train", "w") as f:
+        np.savetxt(f, train_df.values, fmt="%s")
+    with open(f"{args.output_dir}/en.valid", "w") as f:
+        np.savetxt(f, valid_df.values, fmt="%s")
+    with open(f"{args.output_dir}/en.test", "w") as f:
+        np.savetxt(f, test_df.values, fmt="%s")
 

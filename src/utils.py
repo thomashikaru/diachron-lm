@@ -60,9 +60,11 @@ def iter_coha_decade(decade: int, data_dir: str):
     for filename in filenames:
         with open(filename) as f:
             header = f.readline()
-            assert header.startswith("@")
+            if not header.startswith("@"):
+                continue
             space = f.readline()
-            assert space == "\n"
+            if not space == "\n":
+                continue
             for line in f:
                 yield line.strip()
 
