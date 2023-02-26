@@ -34,7 +34,7 @@ rule unzip_coha:
 
 rule make_dirs:
     input:
-        "data/coha/dataverse_files/unzip_coha.done
+        "data/coha/dataverse_files/unzip_coha.done"
     output:
         "data/coha/dataverse_files/1810/fic_1810_8641.txt",
         "data/coha/dataverse_files/2000/fic_2000_27727.txt",
