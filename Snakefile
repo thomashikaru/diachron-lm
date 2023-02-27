@@ -139,7 +139,7 @@ rule train_transformer_bpe:
         OUTPATH="models/bpe_codes/30k/{wildcards.decade}"  # path where processed files will be stored
         FASTBPE=fastBPE/fast  # path to the fastBPE tool
         NUM_OPS=30000
-        INPUT_DIR="data/coha/{wildcards.decade}"
+        INPUT_DIR="data/coha/lm_data/{wildcards.decade}"
 
         # create output path
         mkdir -p $OUTPATH
@@ -216,6 +216,10 @@ rule preprocess_data_transformer:
                 --bpe fastbpe \
                 --workers 20
         """
+
+rule preprocess_coha_all:
+    input:
+        expand("data/coha/lm_data/{decade}/en-bin/{part}.bin", decade=DECADES, part=["train", "valid", "test"])
 
 # train a Transformer language model on each decade's data
 rule train_transformer_lm:
