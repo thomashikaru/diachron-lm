@@ -177,7 +177,7 @@ rule apply_transformer_bpe:
         # create output path
         mkdir -p $OUT_DIR
 
-        lang="ru"
+        lang="en"
         extlist=("train" "test" "valid")
 
         for ext in "${{extlist[@]}}"
