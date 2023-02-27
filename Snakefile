@@ -259,3 +259,7 @@ rule train_transformer_lm:
             --max-update 50000 --max-epoch 35 --patience 3  \
             --seed $RANDOM_SEED	  
         """
+
+rule train_coha_all:
+    input:
+        expand("models/{decade}/checkpoint_last.pt", decade=DECADES)
