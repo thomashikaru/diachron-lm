@@ -39,6 +39,9 @@ rule make_dirs:
     output:
         "data/coha/dataverse_files/1810/fic_1810_8641.txt",
         "data/coha/dataverse_files/2000/fic_2000_27727.txt",
+    resources:
+        mem_mb=2000,
+        runtime=240,
     shell:
         """
         cd data/coha/dataverse_files
