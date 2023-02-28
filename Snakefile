@@ -207,6 +207,7 @@ rule preprocess_data_transformer:
         """
         data_dir="data/coha/lm_data/{wildcards.decade}/en-bpe"
         out_dir="data/coha/lm_data/{wildcards.decade}/en-bin"
+        rm -r $out_dir
         fairseq-preprocess \
                 --only-source \
                 --trainpref $data_dir/en.train \
