@@ -1,6 +1,6 @@
 DECADE_PREFIXES = ["181", "182", "183", "184", "185", "186", "187", "188", "189", "190", 
     "191", "192", "193", "194", "195", "196", "197", "198", "199", "200"]
-DECADES = list(range(1810, 2010, 10))
+DECADES = list(range(1830, 2010, 10))
 
 rule download_coha:
     output:
@@ -287,8 +287,8 @@ rule freq_analysis_plots:
     input:
         "data/freq_analysis/word_counts.csv"
     output:
-        "data/freq_analysis/high_entropy_words.csv",
-        "img/freq_by_decade_example.png"
+        "data/freq_analysis/low_entropy_words.csv",
+        expand("img/freq_by_decade_example_{i}.png", i=list(range(10)))
     resources:
         mem_mb=2000,
         runtime=120
