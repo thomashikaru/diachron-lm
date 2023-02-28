@@ -3,6 +3,8 @@ import glob
 import re
 from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktParameters
 
+DECADES = list(range(1810, 2010, 10))
+
 punkt_param = PunktParameters()
 punkt_param.abbrev_types = set(
     [

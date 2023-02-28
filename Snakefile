@@ -263,3 +263,38 @@ rule train_transformer_lm:
 rule train_coha_all:
     input:
         expand("models/{decade}/checkpoint_last.pt", decade=DECADES)
+
+
+### ANALYSES
+
+rule freq_analysis:
+    input:
+    output:
+        "data/freq_analysis/word_counts.csv"
+    resources:
+        mem_mb=4000,
+        runtime=120
+    conda:
+        "rus"
+    shell:
+        """
+        cd src
+        python freq_analysis.py --data_dir ../data/coha/dataverse_files
+        """
+
+rule freq_analysis:
+    input:
+        "data/freq_analysis/word_counts.csv"
+    output:
+        "data/freq_analysis/high_entropy_words.csv",
+        "img/freq_by_decade_example.png"
+    resources:
+        mem_mb=2000,
+        runtime=120
+    conda:
+        "rus"
+    shell:
+        """
+        cd src
+        python freq_analysis_plots.py
+        """
