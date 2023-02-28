@@ -278,6 +278,7 @@ rule freq_analysis:
         "rus"
     shell:
         """
+        mkdir -p data/freq_analysis
         cd src
         python freq_analysis.py --data_dir ../data/coha/dataverse_files
         """
@@ -295,6 +296,7 @@ rule freq_analysis_plots:
         "rus"
     shell:
         """
+        mkdir -p img
         cd src
         python freq_analysis_plots.py
         """
