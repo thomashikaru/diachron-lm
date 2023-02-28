@@ -282,7 +282,7 @@ rule freq_analysis:
         python freq_analysis.py --data_dir ../data/coha/dataverse_files
         """
 
-rule freq_analysis:
+rule freq_analysis_plots:
     input:
         "data/freq_analysis/word_counts.csv"
     output:
