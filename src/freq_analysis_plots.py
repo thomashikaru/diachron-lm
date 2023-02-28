@@ -39,7 +39,8 @@ if __name__ == "__main__":
         # sample 10 words
         words = list(df.word.unique())
         words = random.sample(words, 10)
-        df = df[df.word.isin(words)]
+        df_sub = df[df.word.isin(words)]
 
-        sns.lineplot(data=df, x="decade", y="frequency", hue="word")
+        plt.clf()
+        sns.lineplot(data=df_sub, x="decade", y="frequency", hue="word")
         plt.savefig(f"{args.plot_prefix}_{i}", dpi=150, bbox_inches="tight")
