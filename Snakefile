@@ -128,7 +128,7 @@ rule train_transformer_bpe:
     output:
         "models/bpe_codes/30k/{decade}/en.codes"
     resources:
-        mem_mb=16000,
+        mem_mb=2000,
         runtime=60
     conda:
         "rus"
@@ -161,7 +161,7 @@ rule apply_transformer_bpe:
         "data/coha/lm_data/{decade}/en-bpe/en.valid",
         "data/coha/lm_data/{decade}/en-bpe/en.test",
     resources:
-        mem_mb=16000,
+        mem_mb=2000,
         runtime=60
     conda:
         "rus"
@@ -197,7 +197,7 @@ rule preprocess_data_transformer:
         "data/coha/lm_data/{decade}/en-bin/valid.bin",
         "data/coha/lm_data/{decade}/en-bin/test.bin",
     resources:
-        mem_mb=16000,
+        mem_mb=2000,
         runtime=120
     conda:
         "rus"
@@ -231,7 +231,7 @@ rule train_transformer_lm:
     output:
         "models/{decade}/checkpoint_last.pt"
     resources:
-        mem_mb=20000,
+        mem_mb=16000,
         runtime=2160,
         slurm_extra="--gres=gpu:1"
     conda:
@@ -300,4 +300,30 @@ rule freq_analysis_plots:
         mkdir -p img
         cd src
         python freq_analysis_plots.py
+        """
+
+# model results for sanity check data
+rule sanity_check:
+    input:
+        "models/{decade}/checkpoint_last.pt",
+        "data/sanity_check/newer_forms.txt",
+        "data/sanity_check/shorter_forms.txt",
+    output:
+        "data/sanity_check/model_results/{decade}/newer_forms.npy",
+        "data/sanity_check/model_results/{decade}/older_forms.npy",
+    resources:
+        mem_mb=8000,
+        runtime=60,
+    shell:
+        """
+        mkdir -p data/sanity_check/model_results/{wildcards.decade}
+        cd src
+        python score_sentences.py --checkpoint_dir ../models/{wildcards.decade} \
+            --data_dir ../data/coha/lm_data/{decade}/en-bin \
+            --test_file ../data/sanity_check/longer_forms.txt \
+            --out_file ../data/sanity_check/model_results/{wildcards.decade}/longer_forms.npy
+        python score_sentences.py --checkpoint_dir ../models/{wildcards.decade} \
+            --data_dir ../data/coha/lm_data/{decade}/en-bin \
+            --test_file ../data/sanity_check/shorter_forms.txt \
+            --out_file ../data/sanity_check/model_results/{wildcards.decade}/shorter_forms.npy
         """
