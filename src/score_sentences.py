@@ -16,6 +16,8 @@ if __name__ == "__main__":
         args.checkpoint_dir,
         data_name_or_path=args.data_dir,
         checkpoint_file="checkpoint_best.pt",
+        bpe="fastbpe",
+        bpe_codes="/home/thclark/diachron-lm/models/bpe_codes/30k/1810/en.codes",
     )
     custom_lm.eval()
 
