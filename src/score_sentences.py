@@ -13,7 +13,7 @@ def make_plot(surprisals, tokens, plot_dir, imgname):
     df.surprisal = -1 * df.surprisal
     sns.axes_style("whitegrid")
     fig, ax = plt.subplots(figsize=(16, 8))
-    sns.lineplot(data=df)
+    sns.lineplot(data=df, ax=ax)
     ax.set_xticks(range(len(df)), labels=list(df.token), ha="left", rotation=-45)
     plt.savefig(os.path.join(plot_dir, imgname), dpi=150, bbox_inches="tight")
 
