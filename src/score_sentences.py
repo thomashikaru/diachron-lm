@@ -40,13 +40,12 @@ if __name__ == "__main__":
         if custom_lm.encode(l).size(0) > custom_lm.max_positions - 2:
             l = " ".join(l.split()[: custom_lm.max_positions - 2])
         tokens = custom_lm.encode(l).unsqueeze(0)
+        print("Tokens:", tokens)
         x, extra = custom_lm.models[0](tokens)
-        print(x)
-        print(x.shape)
-        print(extra.keys())
+        print("Log Probs Shape:", x.shape)
         extracted_features = extra["inner_states"]
         all_embeddings.append(extracted_features)
-        print(extracted_features[-1].shape)
+        print("Final Hidden Layer Shape:", extracted_features[-1].shape)
 
     torch.save(all_embeddings, args.emb_out_file)
 
