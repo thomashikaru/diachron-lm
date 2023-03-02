@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 import pandas as pd
+import fastBPE
 
 
 def make_plot(surprisals, tokens, plot_dir, imgname):
@@ -26,6 +27,8 @@ if __name__ == "__main__":
     parser.add_argument("--out_file")
     parser.add_argument("--plot_dir")
     parser.add_argument("--emb_out_file")
+    parser.add_argument("--codes_path")
+    parser.add_argument("--vocab_path")
     args = parser.parse_args()
 
     custom_lm = TransformerLanguageModel.from_pretrained(
@@ -35,9 +38,12 @@ if __name__ == "__main__":
     )
     custom_lm.eval()
 
+    bpe = fastBPE.fastBPE(args.codes_path, args.vocab_path)
+
     # read data
     with open(args.test_file, "r") as f:
         lines = f.read().splitlines()
+    lines = bpe.apply(lines)
 
     # get per-token surprisals
     lprobs, perps, tokens = [], [], []
