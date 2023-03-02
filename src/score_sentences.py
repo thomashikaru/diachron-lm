@@ -18,7 +18,7 @@ if __name__ == "__main__":
         checkpoint_file="checkpoint_best.pt",
     )
 
-    with open(args.testfile, "r") as f:
+    with open(args.test_file, "r") as f:
         lines = f.read().splitlines()
 
     count = 0
