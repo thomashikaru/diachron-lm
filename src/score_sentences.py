@@ -39,10 +39,11 @@ if __name__ == "__main__":
     for l in lines:
         if custom_lm.encode(l).size(0) > custom_lm.max_positions - 2:
             l = " ".join(l.split()[: custom_lm.max_positions - 2])
-        tokens = custom_lm.encode(l)
-        all_layers = custom_lm.models[0].extract_features(tokens, encoder_out=None)
-        all_embeddings.append(all_layers[0])
-        print(all_layers[0].shape)
+        tokens = custom_lm.encode(l).unsqueeze(0)
+        x, extra = custom_lm.models[0](tokens)
+        extracted_features = extra["inner_states"]
+        all_embeddings.append(extracted_features)
+        print(extracted_features.shape)
 
     torch.save(all_embeddings, args.emb_out_file)
 
