@@ -16,7 +16,7 @@ if __name__ == "__main__":
         args.checkpoint_dir,
         data_name_or_path=args.data_dir,
         checkpoint_file="checkpoint_best.pt",
-    ).models[0]
+    )
     custom_lm.eval()
 
     with open(args.test_file, "r") as f:
@@ -40,7 +40,9 @@ if __name__ == "__main__":
         if custom_lm.encode(l).size(0) > custom_lm.max_positions - 2:
             l = " ".join(l.split()[: custom_lm.max_positions - 2])
         tokens = custom_lm.encode(l)
-        all_layers = custom_lm.extract_features(tokens, return_all_hiddens=True)
+        all_layers = custom_lm.models[0].extract_features(
+            tokens, return_all_hiddens=True
+        )
         all_embeddings.append(all_layers[0])
         print(all_layers[0].shape)
 
