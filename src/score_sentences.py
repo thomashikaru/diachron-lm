@@ -41,7 +41,8 @@ if __name__ == "__main__":
             l = " ".join(l.split()[: custom_lm.max_positions - 2])
         tokens = custom_lm.encode(l).unsqueeze(0)
         x, extra = custom_lm.models[0](tokens)
-        print(extra)
+        print(x)
+        print(extra.keys())
         extracted_features = extra["inner_states"]
         all_embeddings.append(extracted_features)
         print(extracted_features[-1].shape)
