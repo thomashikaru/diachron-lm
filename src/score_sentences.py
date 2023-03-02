@@ -41,6 +41,7 @@ if __name__ == "__main__":
             l = " ".join(l.split()[: custom_lm.max_positions - 2])
         tokens = custom_lm.encode(l).unsqueeze(0)
         print("Tokens:", tokens)
+        print("Decoded Tokens:", custom_lm.decode(tokens))
         x, extra = custom_lm.models[0](tokens)
         print("Log Probs Shape:", x.shape)
         extracted_features = extra["inner_states"]
