@@ -16,7 +16,7 @@ if __name__ == "__main__":
         args.checkpoint_dir,
         data_name_or_path=args.data_dir,
         checkpoint_file="checkpoint_best.pt",
-    )
+    ).models[0]
     custom_lm.eval()
 
     with open(args.test_file, "r") as f:
