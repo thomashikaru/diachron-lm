@@ -43,7 +43,7 @@ if __name__ == "__main__":
         x, extra = custom_lm.models[0](tokens)
         extracted_features = extra["inner_states"]
         all_embeddings.append(extracted_features)
-        print(extracted_features.shape)
+        print(extracted_features[-1].shape)
 
     torch.save(all_embeddings, args.emb_out_file)
 
