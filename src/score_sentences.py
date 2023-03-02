@@ -17,6 +17,7 @@ if __name__ == "__main__":
         data_name_or_path=args.data_dir,
         checkpoint_file="checkpoint_best.pt",
     )
+    custom_lm.eval()
 
     with open(args.test_file, "r") as f:
         lines = f.read().splitlines()
