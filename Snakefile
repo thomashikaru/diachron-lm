@@ -323,7 +323,7 @@ rule sanity_check:
         export LD_LIBRARY_PATH=~/.conda/envs/rus/lib
         mkdir -p data/sanity_check/model_results/{wildcards.decade}/surprisals
         mkdir -p data/sanity_check/model_results/{wildcards.decade}/embeddings
-        fastBPE/fast getvocab data/coha/lm_data/{wildcards.decade}/en.train > models/bpe_codes/30k/{wildcards.decade}/en.vocab
+        fastBPE/fast getvocab data/coha/lm_data/{wildcards.decade}/en-bpe/en.train > models/bpe_codes/30k/{wildcards.decade}/en.vocab
         cd src
         python score_sentences.py --checkpoint_dir /home/thclark/diachron-lm/models/{wildcards.decade} \
             --data_dir /home/thclark/diachron-lm/data/coha/lm_data/{wildcards.decade}/en-bin \
@@ -342,3 +342,10 @@ rule sanity_check:
             --plot_dir /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals \
             --emb_out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/embeddings/shorter_forms.npy
         """
+
+rule sanity_check_all:
+    input:
+        expand("data/sanity_check/model_results/{decade}/surprisals/longer_forms.npy", decade=DECADES),
+        expand("data/sanity_check/model_results/{decade}/surprisals/shorter_forms.npy", decade=DECADES),
+        expand("data/sanity_check/model_results/{decade}/embeddings/longer_forms.npy", decade=DECADES),
+        expand("data/sanity_check/model_results/{decade}/embeddings/shorter_forms.npy", decade=DECADES),
