@@ -322,20 +322,20 @@ rule sanity_check:
         mkdir -p data/sanity_check/model_results/{wildcards.decade}/embeddings
         fastBPE/fast getvocab data/coha/lm_data/{wildcards.decade}/en.train > models/bpe_codes/30k/{wildcards.decade}/en.vocab
         cd src
+        python score_sentences.py --checkpoint_dir /home/thclark/diachron-lm/models/{wildcards.decade} \
+            --data_dir /home/thclark/diachron-lm/data/coha/lm_data/{wildcards.decade}/en-bin \
+            --test_file /home/thclark/diachron-lm/data/sanity_check/longer_forms.txt \
+            --out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals/longer_forms.npy \
+            --codes_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.codes \
+            --vocab_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.vocab \
+            --plot_dir /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals \
+            --emb_out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/embeddings/emb_longer_forms.npy
         python score_sentences.py --checkpoint_dir ../models/{wildcards.decade} \
-            --data_dir ../data/coha/lm_data/{wildcards.decade}/en-bin \
-            --test_file ../data/sanity_check/longer_forms.txt \
-            --out_file ../data/sanity_check/model_results/{wildcards.decade}/surprisals/longer_forms.npy \
-            --codes_path ../models/bpe_codes/30k/{wildcards.decade}/en.codes \
-            --vocab_path ../models/bpe_codes/30k/{wildcards.decade}/en.vocab \
-            --plot_dir ../data/sanity_check/model_results/{wildcards.decade}/surprisals \
-            --emb_out_file ../data/sanity_check/model_results/{wildcards.decade}/embeddings/emb_longer_forms.npy
-        python score_sentences.py --checkpoint_dir ../models/{wildcards.decade} \
-            --data_dir ../data/coha/lm_data/{wildcards.decade}/en-bin \
-            --test_file ../data/sanity_check/shorter_forms.txt \
-            --out_file ../data/sanity_check/model_results/{wildcards.decade}/surprisals/shorter_forms.npy \
-            --codes_path ../models/bpe_codes/30k/{wildcards.decade}/en.codes \
-            --vocab_path ../models/bpe_codes/30k/{wildcards.decade}/en.vocab \
-            --plot_dir ../data/sanity_check/model_results/{wildcards.decade}/surprisals \
-            --emb_out_file ../data/sanity_check/model_results/{wildcards.decade}/embeddings/shorter_forms.npy
+            --data_dir /home/thclark/diachron-lm/data/coha/lm_data/{wildcards.decade}/en-bin \
+            --test_file /home/thclark/diachron-lm/data/sanity_check/shorter_forms.txt \
+            --out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals/shorter_forms.npy \
+            --codes_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.codes \
+            --vocab_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.vocab \
+            --plot_dir /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals \
+            --emb_out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/embeddings/shorter_forms.npy
         """
