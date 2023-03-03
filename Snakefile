@@ -316,6 +316,8 @@ rule sanity_check:
     resources:
         mem_mb=8000,
         runtime=60,
+    conda:
+        "rus"
     shell:
         """
         mkdir -p data/sanity_check/model_results/{wildcards.decade}/surprisals
