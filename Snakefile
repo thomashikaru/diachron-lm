@@ -332,7 +332,7 @@ rule sanity_check:
             --codes_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.codes \
             --vocab_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.vocab \
             --plot_dir /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals \
-            --emb_out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/embeddings/emb_longer_forms.npy
+            --emb_out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/embeddings/longer_forms.npy
         python score_sentences.py --checkpoint_dir ../models/{wildcards.decade} \
             --data_dir /home/thclark/diachron-lm/data/coha/lm_data/{wildcards.decade}/en-bin \
             --test_file /home/thclark/diachron-lm/data/sanity_check/shorter_forms.txt \
