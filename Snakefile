@@ -320,6 +320,7 @@ rule sanity_check:
         "rus"
     shell:
         """
+        export LD_LIBRARY_PATH=~/.conda/envs/rus/lib
         mkdir -p data/sanity_check/model_results/{wildcards.decade}/surprisals
         mkdir -p data/sanity_check/model_results/{wildcards.decade}/embeddings
         fastBPE/fast getvocab data/coha/lm_data/{wildcards.decade}/en.train > models/bpe_codes/30k/{wildcards.decade}/en.vocab
