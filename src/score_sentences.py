@@ -57,7 +57,9 @@ if __name__ == "__main__":
         print(out["positional_scores"])
         tokens.append([custom_lm.tgt_dict[i] for i in out["tokens"]])
         print(tokens[-1])
-        make_plot(lprobs[-1], tokens[-1], args.plot_dir, f"sanity_check_plot_{item}")
+        make_plot(
+            lprobs[-1], tokens[-1], args.plot_dir, f"sanity_check_plot_{tokens[-1][-1]}"
+        )
     torch.save([lprobs, tokens], args.out_file)
 
     # get hidden representations

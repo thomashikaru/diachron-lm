@@ -306,24 +306,36 @@ rule freq_analysis_plots:
 rule sanity_check:
     input:
         "models/{decade}/checkpoint_last.pt",
-        "data/sanity_check/newer_forms.txt",
+        "data/sanity_check/longer_forms.txt",
         "data/sanity_check/shorter_forms.txt",
     output:
-        "data/sanity_check/model_results/{decade}/newer_forms.npy",
-        "data/sanity_check/model_results/{decade}/older_forms.npy",
+        "data/sanity_check/model_results/{decade}/surprisals/longer_forms.npy",
+        "data/sanity_check/model_results/{decade}/surprisals/shorter_forms.npy",
+        "data/sanity_check/model_results/{decade}/embeddings/longer_forms.npy",
+        "data/sanity_check/model_results/{decade}/embeddings/shorter_forms.npy",
     resources:
         mem_mb=8000,
         runtime=60,
     shell:
         """
-        mkdir -p data/sanity_check/model_results/{wildcards.decade}
+        mkdir -p data/sanity_check/model_results/{wildcards.decade}/surprisals
+        mkdir -p data/sanity_check/model_results/{wildcards.decade}/embeddings
+        fastBPE/fast getvocab data/coha/lm_data/{wildcards.decade}/en.train > models/bpe_codes/30k/{wildcards.decade}/en.vocab
         cd src
         python score_sentences.py --checkpoint_dir ../models/{wildcards.decade} \
-            --data_dir ../data/coha/lm_data/{decade}/en-bin \
+            --data_dir ../data/coha/lm_data/{wildcards.decade}/en-bin \
             --test_file ../data/sanity_check/longer_forms.txt \
-            --out_file ../data/sanity_check/model_results/{wildcards.decade}/longer_forms.npy
+            --out_file ../data/sanity_check/model_results/{wildcards.decade}/surprisals/longer_forms.npy \
+            --codes_path ../models/bpe_codes/30k/{wildcards.decade}/en.codes \
+            --vocab_path ../models/bpe_codes/30k/{wildcards.decade}/en.vocab \
+            --plot_dir ../data/sanity_check/model_results/{wildcards.decade}/surprisals \
+            --emb_out_file ../data/sanity_check/model_results/{wildcards.decade}/embeddings/emb_longer_forms.npy
         python score_sentences.py --checkpoint_dir ../models/{wildcards.decade} \
-            --data_dir ../data/coha/lm_data/{decade}/en-bin \
+            --data_dir ../data/coha/lm_data/{wildcards.decade}/en-bin \
             --test_file ../data/sanity_check/shorter_forms.txt \
-            --out_file ../data/sanity_check/model_results/{wildcards.decade}/shorter_forms.npy
+            --out_file ../data/sanity_check/model_results/{wildcards.decade}/surprisals/shorter_forms.npy \
+            --codes_path ../models/bpe_codes/30k/{wildcards.decade}/en.codes \
+            --vocab_path ../models/bpe_codes/30k/{wildcards.decade}/en.vocab \
+            --plot_dir ../data/sanity_check/model_results/{wildcards.decade}/surprisals \
+            --emb_out_file ../data/sanity_check/model_results/{wildcards.decade}/embeddings/shorter_forms.npy
         """
