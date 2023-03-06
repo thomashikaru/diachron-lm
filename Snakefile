@@ -257,6 +257,7 @@ rule train_transformer_lm:
             --tokens-per-sample 128 --sample-break-mode none \
             --max-tokens 128 --update-freq 64 \
             --fp16 \
+            --keep-last-epochs 3 \
             --max-update 50000 --max-epoch 35 --patience 3  \
             --seed $RANDOM_SEED	  
         """
