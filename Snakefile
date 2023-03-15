@@ -402,7 +402,4 @@ rule next_word_pred:
 
 rule next_word_pred_all:
     input:
-        expand("data/sanity_check/model_results/{decade}/surprisals/longer_forms.npy", decade=DECADES),
-        expand("data/sanity_check/model_results/{decade}/surprisals/shorter_forms.npy", decade=DECADES),
-        expand("data/sanity_check/model_results/{decade}/embeddings/longer_forms.npy", decade=DECADES),
-        expand("data/sanity_check/model_results/{decade}/embeddings/shorter_forms.npy", decade=DECADES),
+        expand("data/next_word_pred/model_results/{decade}/predictions.csv", decade=DECADES),
