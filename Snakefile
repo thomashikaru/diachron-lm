@@ -378,7 +378,7 @@ rule plot_embeddings_all:
 rule next_word_pred:
     input:
         "models/{decade}/checkpoint_last.pt",
-        "data/next_word_pred/inputs.txt,
+        "data/next_word_pred/inputs.txt",
     output:
         "data/next_word_pred/model_results/{decade}/predictions.csv",
     resources:
