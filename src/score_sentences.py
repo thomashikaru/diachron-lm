@@ -63,17 +63,18 @@ if __name__ == "__main__":
     torch.save([lprobs, tokens], args.out_file)
 
     # get hidden representations
-    all_embeddings = []
+    all_embeddings, top_k_data = [], []
     for l in lines:
         if custom_lm.encode(l).size(0) > custom_lm.max_positions - 2:
             l = " ".join(l.split()[: custom_lm.max_positions - 2])
         tokens = custom_lm.encode(l).unsqueeze(0)
         print("Tokens:", tokens)
         print("Decoded Tokens:", custom_lm.decode(tokens))
-        x, extra = custom_lm.models[0](tokens)
-        print("Log Probs Shape:", x.shape)
+        logprobs, extra = custom_lm.models[0](tokens)
+        print("Log Probs Shape:", logprobs.shape)
         extracted_features = extra["inner_states"]
         all_embeddings.append(extracted_features)
         print("Final Hidden Layer Shape:", extracted_features[-1].shape)
+
     torch.save(all_embeddings, args.emb_out_file)
 

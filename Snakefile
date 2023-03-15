@@ -310,10 +310,10 @@ rule sanity_check:
         "data/sanity_check/longer_forms.txt",
         "data/sanity_check/shorter_forms.txt",
     output:
-        "data/sanity_check/model_results/{decade}/surprisals/longer_forms.npy",
-        "data/sanity_check/model_results/{decade}/surprisals/shorter_forms.npy",
-        "data/sanity_check/model_results/{decade}/embeddings/longer_forms.npy",
-        "data/sanity_check/model_results/{decade}/embeddings/shorter_forms.npy",
+        "data/sanity_check/model_results/{decade}/surprisals/longer_forms.pt",
+        "data/sanity_check/model_results/{decade}/surprisals/shorter_forms.pt",
+        "data/sanity_check/model_results/{decade}/embeddings/longer_forms.pt",
+        "data/sanity_check/model_results/{decade}/embeddings/shorter_forms.pt",
     resources:
         mem_mb=8000,
         runtime=60,
@@ -329,22 +329,78 @@ rule sanity_check:
         python score_sentences.py --checkpoint_dir /home/thclark/diachron-lm/models/{wildcards.decade} \
             --data_dir /home/thclark/diachron-lm/data/coha/lm_data/{wildcards.decade}/en-bin \
             --test_file /home/thclark/diachron-lm/data/sanity_check/longer_forms.txt \
-            --out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals/longer_forms.npy \
+            --out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals/longer_forms.pt \
             --codes_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.codes \
             --vocab_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.vocab \
             --plot_dir /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals \
-            --emb_out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/embeddings/longer_forms.npy
+            --emb_out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/embeddings/longer_forms.pt
         python score_sentences.py --checkpoint_dir ../models/{wildcards.decade} \
             --data_dir /home/thclark/diachron-lm/data/coha/lm_data/{wildcards.decade}/en-bin \
             --test_file /home/thclark/diachron-lm/data/sanity_check/shorter_forms.txt \
-            --out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals/shorter_forms.npy \
+            --out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals/shorter_forms.pt \
             --codes_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.codes \
             --vocab_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.vocab \
             --plot_dir /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/surprisals \
-            --emb_out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/embeddings/shorter_forms.npy
+            --emb_out_file /home/thclark/diachron-lm/data/sanity_check/model_results/{wildcards.decade}/embeddings/shorter_forms.pt
         """
 
 rule sanity_check_all:
+    input:
+        expand("data/sanity_check/model_results/{decade}/surprisals/longer_forms.npy", decade=DECADES),
+        expand("data/sanity_check/model_results/{decade}/surprisals/shorter_forms.npy", decade=DECADES),
+        expand("data/sanity_check/model_results/{decade}/embeddings/longer_forms.npy", decade=DECADES),
+        expand("data/sanity_check/model_results/{decade}/embeddings/shorter_forms.npy", decade=DECADES),
+
+rule plot_embeddings:
+    input:
+        "data/sanity_check/model_results/{decade}/embeddings/longer_forms.npy",
+        "data/sanity_check/model_results/{decade}/embeddings/shorter_forms.npy",
+    output:
+        "img/embeddings_{decade}.png"
+    shell:
+        """
+        cd src
+        python plot_embeddings.py \
+        --file_pattern_1 "../data/sanity_check/model_results/{wildcards.decade}/embeddings/longer_forms.npy" \
+        --file_pattern_2 "../data/sanity_check/model_results/{wildcards.decade}/embeddings/shorter_forms.npy" \
+        --reference_file_1 ../data/sanity_check/longer_forms.txt \
+        --reference_file_2 ../data/sanity_check/shorter_forms.txt \
+        --save_dir ../img \
+        --decade {wildcards.decade}
+        """
+
+rule plot_embeddings_all:
+    input:
+        expand("img/embeddings_{decade}.png", decade=DECADES)
+
+
+# model results for sanity check data
+rule next_word_pred:
+    input:
+        "models/{decade}/checkpoint_last.pt",
+        "data/next_word_pred/inputs.txt,
+    output:
+        "data/next_word_pred/model_results/{decade}/predictions.csv",
+    resources:
+        mem_mb=8000,
+        runtime=60,
+    conda:
+        "rus"
+    shell:
+        """
+        export LD_LIBRARY_PATH=~/.conda/envs/rus/lib
+        mkdir -p data/next_word_pred/model_results/{wildcards.decade}
+        fastBPE/fast getvocab data/coha/lm_data/{wildcards.decade}/en-bpe/en.train > models/bpe_codes/30k/{wildcards.decade}/en.vocab
+        cd src
+        python next_word_pred.py --checkpoint_dir /home/thclark/diachron-lm/models/{wildcards.decade} \
+            --data_dir /home/thclark/diachron-lm/data/coha/lm_data/{wildcards.decade}/en-bin \
+            --test_file /home/thclark/diachron-lm/data/next_word_pred/inputs.txt \
+            --codes_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.codes \
+            --vocab_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.vocab \
+            --top_k_out_file /home/thclark/diachron-lm/data/next_word_pred/model_results/{wildcards.decade}/predictions.csv
+        """
+
+rule next_word_pred_all:
     input:
         expand("data/sanity_check/model_results/{decade}/surprisals/longer_forms.npy", decade=DECADES),
         expand("data/sanity_check/model_results/{decade}/surprisals/shorter_forms.npy", decade=DECADES),
