@@ -50,8 +50,8 @@ if __name__ == "__main__":
         print("Decoded Tokens:", custom_lm.decode(tokens))
         logprobs, extra = custom_lm.models[0](tokens)
         print("Log Probs Shape:", logprobs.shape)
-        top_k_ids = logprobs[0, -2, :].argsort(descending=True)[: args.top_k]
-        print("Top K token IDs:", list(top_k_ids))
+        top_k_ids = logprobs[0, -2, :].argsort(descending=True)[: args.top_k].tolist()
+        print("Top K token IDs:", top_k_ids)
         decoded_words = [custom_lm.decode([w]) for w in top_k_ids]
         print("Top K tokens:", decoded_words)
         top_k_data.append(
