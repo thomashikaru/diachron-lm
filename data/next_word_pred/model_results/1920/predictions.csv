@@ -1,0 +1,326 @@
+context,top_k_ids,top_k_decoded,k
+he regularly lifts weights at the,tensor(704),top,1
+he regularly lifts weights at the,tensor(268),end,2
+he regularly lifts weights at the,tensor(1834),bottom,3
+he regularly lifts weights at the,tensor(194),head,4
+he regularly lifts weights at the,tensor(785),foot,5
+he regularly lifts weights at the,tensor(100),back,6
+he regularly lifts weights at the,tensor(440),front,7
+he regularly lifts weights at the,tensor(180),same,8
+he regularly lifts weights at the,tensor(222),door,9
+he regularly lifts weights at the,tensor(2165),ends,10
+he regularly lifts weights at the,tensor(381),table,11
+he regularly lifts weights at the,tensor(142),right,12
+he regularly lifts weights at the,tensor(1734),sides,13
+he regularly lifts weights at the,tensor(551),window,14
+he regularly lifts weights at the,tensor(1580),windows,15
+he regularly lifts weights at the,tensor(282),feet,16
+he regularly lifts weights at the,tensor(8569),edges,17
+he regularly lifts weights at the,tensor(209),left,18
+he regularly lifts weights at the,tensor(2732),base,19
+he regularly lifts weights at the,tensor(252),side,20
+he regularly lifts weights at the,tensor(3659),piano,21
+he regularly lifts weights at the,tensor(1316),proper,22
+he regularly lifts weights at the,tensor(846),mouth,23
+he regularly lifts weights at the,tensor(1977),rear,24
+he regularly lifts weights at the,tensor(5223),waist,25
+she gave him a call on the,tensor(87),other,1
+she gave him a call on the,tensor(114),old,2
+she gave him a call on the,tensor(680),subject,3
+she gave him a call on the,tensor(193),young,4
+she gave him a call on the,tensor(914),stage,5
+she gave him a call on the,tensor(234),girl,6
+she gave him a call on the,tensor(1729),telephone,7
+she gave him a call on the,tensor(100),back,8
+she gave him a call on the,tensor(381),table,9
+she gave him a call on the,tensor(111),way,10
+she gave him a call on the,tensor(178),night,11
+she gave him a call on the,tensor(94),little,12
+she gave him a call on the,tensor(479),doctor,13
+she gave him a call on the,tensor(27),UNK,14
+she gave him a call on the,tensor(76),man,15
+she gave him a call on the,tensor(1692),stranger,16
+she gave him a call on the,tensor(347),others,17
+she gave him a call on the,tensor(474),family,18
+she gave him a call on the,tensor(558),floor,19
+she gave him a call on the,tensor(311),children,20
+she gave him a call on the,tensor(139),day,21
+she gave him a call on the,tensor(225),part,22
+she gave him a call on the,tensor(277),boy,23
+she gave him a call on the,tensor(96),two,24
+she gave him a call on the,tensor(91),new,25
+he took me for a ride in his,tensor(1764),automobile,1
+he took me for a ride in his,tensor(490),car,2
+he took me for a ride in his,tensor(778),boat,3
+he took me for a ride in his,tensor(146),own,4
+he took me for a ride in his,tensor(4030),canoe,5
+he took me for a ride in his,tensor(5046),coach,6
+he took me for a ride in his,tensor(879),direction,7
+he took me for a ride in his,tensor(1340),motor,8
+he took me for a ride in his,tensor(10322),bicycle,9
+he took me for a ride in his,tensor(6958),cart,10
+he took me for a ride in his,tensor(762),train,11
+he took me for a ride in his,tensor(2561),wagon,12
+he took me for a ride in his,tensor(3262),tracks,13
+he took me for a ride in his,tensor(272),big,14
+he took me for a ride in his,tensor(91),new,15
+he took me for a ride in his,tensor(8990),auto,16
+he took me for a ride in his,tensor(27),UNK,17
+he took me for a ride in his,tensor(4431),spare,18
+he took me for a ride in his,tensor(17741),buckboard,19
+he took me for a ride in his,tensor(1135),lead,20
+he took me for a ride in his,tensor(114),old,21
+he took me for a ride in his,tensor(1376),ford,22
+he took me for a ride in his,tensor(2462),saddle,23
+he took me for a ride in his,tensor(1831),native,24
+he took me for a ride in his,tensor(94),little,25
+they conducted experiments in the,tensor(5864),laboratory,1
+they conducted experiments in the,tensor(4655),manufacture,2
+they conducted experiments in the,tensor(507),field,3
+they conducted experiments in the,tensor(110),first,4
+they conducted experiments in the,tensor(1308),fields,5
+they conducted experiments in the,tensor(443),form,6
+they conducted experiments in the,tensor(842),various,7
+they conducted experiments in the,tensor(180),same,8
+they conducted experiments in the,tensor(2491),interior,9
+they conducted experiments in the,tensor(879),direction,10
+they conducted experiments in the,tensor(608),building,11
+they conducted experiments in the,tensor(444),past,12
+they conducted experiments in the,tensor(4024),mines,13
+they conducted experiments in the,tensor(547),south,14
+they conducted experiments in the,tensor(91),new,15
+they conducted experiments in the,tensor(289),light,16
+they conducted experiments in the,tensor(2724),metal,17
+they conducted experiments in the,tensor(319),use,18
+they conducted experiments in the,tensor(618),art,19
+they conducted experiments in the,tensor(27),UNK,20
+they conducted experiments in the,tensor(890),study,21
+they conducted experiments in the,tensor(336),making,22
+they conducted experiments in the,tensor(998),development,23
+they conducted experiments in the,tensor(12666),laboratories,24
+they conducted experiments in the,tensor(488),west,25
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(211),year,1
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(900),class,2
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(822),camp,3
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(1943),hospital,4
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(371),town,5
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(8),and,6
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(514),age,7
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(203),room,8
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(934),club,9
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(424),school,10
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(873),college,11
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(1066),cabin,12
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(5),",",13
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(24),'s,14
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(253),days,15
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(11824),stadium,16
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(1338),village,17
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(3294),tent,18
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(1051),youth,19
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(795),hall,20
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(2363),library,21
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(6),.,22
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(27),UNK,23
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(1002),winter,24
+i met my room@@ mate when we lived together in the univer@@ sit@@ y@@ 's freshman,tensor(3062),bas@@,25
+the pri@@ mates most closely related to humans are the,tensor(138),most,1
+the pri@@ mates most closely related to humans are the,tensor(180),same,2
+the pri@@ mates most closely related to humans are the,tensor(96),two,3
+the pri@@ mates most closely related to humans are the,tensor(1467),animals,4
+the pri@@ mates most closely related to humans are the,tensor(368),true,5
+the pri@@ mates most closely related to humans are the,tensor(110),first,6
+the pri@@ mates most closely related to humans are the,tensor(9134),offspring,7
+the pri@@ mates most closely related to humans are the,tensor(72),more,8
+the pri@@ mates most closely related to humans are the,tensor(88),only,9
+the pri@@ mates most closely related to humans are the,tensor(1257),ones,10
+the pri@@ mates most closely related to humans are the,tensor(123),great,11
+the pri@@ mates most closely related to humans are the,tensor(1488),names,12
+the pri@@ mates most closely related to humans are the,tensor(193),young,13
+the pri@@ mates most closely related to humans are the,tensor(10),"""",14
+the pri@@ mates most closely related to humans are the,tensor(91),new,15
+the pri@@ mates most closely related to humans are the,tensor(405),human,16
+the pri@@ mates most closely related to humans are the,tensor(2337),parents,17
+the pri@@ mates most closely related to humans are the,tensor(1646),birds,18
+the pri@@ mates most closely related to humans are the,tensor(592),result,19
+the pri@@ mates most closely related to humans are the,tensor(17600),females,20
+the pri@@ mates most closely related to humans are the,tensor(153),people,21
+the pri@@ mates most closely related to humans are the,tensor(980),lower,22
+the pri@@ mates most closely related to humans are the,tensor(27),UNK,23
+the pri@@ mates most closely related to humans are the,tensor(298),best,24
+the pri@@ mates most closely related to humans are the,tensor(557),common,25
+she asked him to speak clearly into the,tensor(179),face,1
+she asked him to speak clearly into the,tensor(203),room,2
+she asked him to speak clearly into the,tensor(273),matter,3
+she asked him to speak clearly into the,tensor(1480),language,4
+she asked him to speak clearly into the,tensor(234),girl,5
+she asked him to speak clearly into the,tensor(157),house,6
+she asked him to speak clearly into the,tensor(690),future,7
+she asked him to speak clearly into the,tensor(114),old,8
+she asked him to speak clearly into the,tensor(281),next,9
+she asked him to speak clearly into the,tensor(680),subject,10
+she asked him to speak clearly into the,tensor(87),other,11
+she asked him to speak clearly into the,tensor(27),UNK,12
+she asked him to speak clearly into the,tensor(178),night,13
+she asked him to speak clearly into the,tensor(374),fire,14
+she asked him to speak clearly into the,tensor(154),eyes,15
+she asked him to speak clearly into the,tensor(474),family,16
+she asked him to speak clearly into the,tensor(1725),faces,17
+she asked him to speak clearly into the,tensor(567),dark,18
+she asked him to speak clearly into the,tensor(582),spirit,19
+she asked him to speak clearly into the,tensor(877),silence,20
+she asked him to speak clearly into the,tensor(193),young,21
+she asked him to speak clearly into the,tensor(156),world,22
+she asked him to speak clearly into the,tensor(291),voice,23
+she asked him to speak clearly into the,tensor(1680),meaning,24
+she asked him to speak clearly into the,tensor(2161),ear,25
+the car was running low on,tensor(4),the,1
+the car was running low on,tensor(11),a,2
+the car was running low on,tensor(79),its,3
+the car was running low on,tensor(20),his,4
+the car was running low on,tensor(31),her,5
+the car was running low on,tensor(49),one,6
+the car was running low on,tensor(704),top,7
+the car was running low on,tensor(438),either,8
+the car was running low on,tensor(226),both,9
+the car was running low on,tensor(46),all,10
+the car was running low on,tensor(45),an,11
+the car was running low on,tensor(58),their,12
+the car was running low on,tensor(27),UNK,13
+the car was running low on,tensor(13),that,14
+the car was running low on,tensor(5026),wheels,15
+the car was running low on,tensor(9),to,16
+the car was running low on,tensor(785),foot,17
+the car was running low on,tensor(166),every,18
+the car was running low on,tensor(363),several,19
+the car was running low on,tensor(96),two,20
+the car was running low on,tensor(67),my,21
+the car was running low on,tensor(84),time,22
+the car was running low on,tensor(290),high,23
+the car was running low on,tensor(82),some,24
+the car was running low on,tensor(39),this,25
+we bought the sandwich meat from the,tensor(474),family,1
+we bought the sandwich meat from the,tensor(1102),store,2
+we bought the sandwich meat from the,tensor(381),table,3
+we bought the sandwich meat from the,tensor(9236),grocery,4
+we bought the sandwich meat from the,tensor(479),doctor,5
+we bought the sandwich meat from the,tensor(311),children,6
+we bought the sandwich meat from the,tensor(2276),cook,7
+we bought the sandwich meat from the,tensor(519),girls,8
+we bought the sandwich meat from the,tensor(114),old,9
+we bought the sandwich meat from the,tensor(2510),mil@@,10
+we bought the sandwich meat from the,tensor(76),man,11
+we bought the sandwich meat from the,tensor(505),boys,12
+we bought the sandwich meat from the,tensor(1495),kitchen,13
+we bought the sandwich meat from the,tensor(4464),coo@@,14
+we bought the sandwich meat from the,tensor(3377),natives,15
+we bought the sandwich meat from the,tensor(1782),farmer,16
+we bought the sandwich meat from the,tensor(237),mother,17
+we bought the sandwich meat from the,tensor(107),men,18
+we bought the sandwich meat from the,tensor(27),UNK,19
+we bought the sandwich meat from the,tensor(330),company,20
+we bought the sandwich meat from the,tensor(87),other,21
+we bought the sandwich meat from the,tensor(823),dog,22
+we bought the sandwich meat from the,tensor(1742),indians,23
+we bought the sandwich meat from the,tensor(157),house,24
+we bought the sandwich meat from the,tensor(249),women,25
+the guitar was not plu@@ gged in to the,tensor(556),ground,1
+the guitar was not plu@@ gged in to the,tensor(374),fire,2
+the guitar was not plu@@ gged in to the,tensor(87),other,3
+the guitar was not plu@@ gged in to the,tensor(381),table,4
+the guitar was not plu@@ gged in to the,tensor(558),floor,5
+the guitar was not plu@@ gged in to the,tensor(3659),piano,6
+the guitar was not plu@@ gged in to the,tensor(268),end,7
+the guitar was not plu@@ gged in to the,tensor(704),top,8
+the guitar was not plu@@ gged in to the,tensor(794),music,9
+the guitar was not plu@@ gged in to the,tensor(5369),tune,10
+the guitar was not plu@@ gged in to the,tensor(27),UNK,11
+the guitar was not plu@@ gged in to the,tensor(123),great,12
+the guitar was not plu@@ gged in to the,tensor(672),sun,13
+the guitar was not plu@@ gged in to the,tensor(2823),finish,14
+the guitar was not plu@@ gged in to the,tensor(118),last,15
+the guitar was not plu@@ gged in to the,tensor(222),door,16
+the guitar was not plu@@ gged in to the,tensor(110),first,17
+the guitar was not plu@@ gged in to the,tensor(541),sound,18
+the guitar was not plu@@ gged in to the,tensor(7641),pom@@,19
+the guitar was not plu@@ gged in to the,tensor(114),old,20
+the guitar was not plu@@ gged in to the,tensor(109),very,21
+the guitar was not plu@@ gged in to the,tensor(209),left,22
+the guitar was not plu@@ gged in to the,tensor(869),tree,23
+the guitar was not plu@@ gged in to the,tensor(1169),edge,24
+the guitar was not plu@@ gged in to the,tensor(193),young,25
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(11),a,1
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(4),the,2
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(58),their,3
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(380),black,4
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(248),white,5
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(566),evening,6
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(13650),khaki,7
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(61),out,8
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(1063),clothes,9
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(366),red,10
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(71),them,11
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(62),no,12
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(91),new,13
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(4113),glasses,14
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(13389),overalls,15
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(9523),caps,16
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(57),so,17
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(8),and,18
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(5),",",19
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(584),blue,20
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(27),UNK,21
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(483),short,22
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(135),long,23
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(16263),masks,24
+it was difficult to spot the soldiers in the forest because they were wearing,tensor(130),good,25
+the doctors said the only way to treat the cancer was with,tensor(4),the,1
+the doctors said the only way to treat the cancer was with,tensor(11),a,2
+the doctors said the only way to treat the cancer was with,tensor(71),them,3
+the doctors said the only way to treat the cancer was with,tensor(58),their,4
+the doctors said the only way to treat the cancer was with,tensor(60),me,5
+the doctors said the only way to treat the cancer was with,tensor(45),an,6
+the doctors said the only way to treat the cancer was with,tensor(42),him,7
+the doctors said the only way to treat the cancer was with,tensor(46),all,8
+the doctors said the only way to treat the cancer was with,tensor(20),his,9
+the doctors said the only way to treat the cancer was with,tensor(82),some,10
+the doctors said the only way to treat the cancer was with,tensor(67),my,11
+the doctors said the only way to treat the cancer was with,tensor(16),it,12
+the doctors said the only way to treat the cancer was with,tensor(27),UNK,13
+the doctors said the only way to treat the cancer was with,tensor(62),no,14
+the doctors said the only way to treat the cancer was with,tensor(148),those,15
+the doctors said the only way to treat the cancer was with,tensor(31),her,16
+the doctors said the only way to treat the cancer was with,tensor(39),this,17
+the doctors said the only way to treat the cancer was with,tensor(658),food,18
+the doctors said the only way to treat the cancer was with,tensor(13),that,19
+the doctors said the only way to treat the cancer was with,tensor(122),us,20
+the doctors said the only way to treat the cancer was with,tensor(10),"""",21
+the doctors said the only way to treat the cancer was with,tensor(537),dr.,22
+the doctors said the only way to treat the cancer was with,tensor(667),cold,23
+the doctors said the only way to treat the cancer was with,tensor(199),mrs.,24
+the doctors said the only way to treat the cancer was with,tensor(1934),difficulty,25
+the famous jazz musician played a,tensor(109),very,1
+the famous jazz musician played a,tensor(123),great,2
+the famous jazz musician played a,tensor(225),part,3
+the famous jazz musician played a,tensor(269),small,4
+the famous jazz musician played a,tensor(135),long,5
+the famous jazz musician played a,tensor(3659),piano,6
+the famous jazz musician played a,tensor(1145),leading,7
+the famous jazz musician played a,tensor(10),"""",8
+the famous jazz musician played a,tensor(3456),prominent,9
+the famous jazz musician played a,tensor(3151),trick,10
+the famous jazz musician played a,tensor(130),good,11
+the famous jazz musician played a,tensor(3731),clever,12
+the famous jazz musician played a,tensor(1211),piece,13
+the famous jazz musician played a,tensor(94),little,14
+the famous jazz musician played a,tensor(295),large,15
+the famous jazz musician played a,tensor(8952),violin,16
+the famous jazz musician played a,tensor(1641),series,17
+the famous jazz musician played a,tensor(138),most,18
+the famous jazz musician played a,tensor(1453),popular,19
+the famous jazz musician played a,tensor(702),game,20
+the famous jazz musician played a,tensor(91),new,21
+the famous jazz musician played a,tensor(8704),lone,22
+the famous jazz musician played a,tensor(2570),double,23
+the famous jazz musician played a,tensor(457),sort,24
+the famous jazz musician played a,tensor(4168),role,25
