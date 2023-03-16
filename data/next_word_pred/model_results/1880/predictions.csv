@@ -1,326 +1,501 @@
 context,top_k_ids,top_k_decoded,k
-he regularly lifts weights at the,tensor(163),same,1
-he regularly lifts weights at the,tensor(86),time,2
-he regularly lifts weights at the,tensor(307),end,3
-he regularly lifts weights at the,tensor(2481),bar,4
-he regularly lifts weights at the,tensor(360),point,5
-he regularly lifts weights at the,tensor(1003),top,6
-he regularly lifts weights at the,tensor(205),head,7
-he regularly lifts weights at the,tensor(318),word,8
-he regularly lifts weights at the,tensor(489),table,9
-he regularly lifts weights at the,tensor(2392),mercy,10
-he regularly lifts weights at the,tensor(2485),expense,11
-he regularly lifts weights at the,tensor(241),moment,12
-he regularly lifts weights at the,tensor(1162),rate,13
-he regularly lifts weights at the,tensor(1476),sides,14
-he regularly lifts weights at the,tensor(172),right,15
-he regularly lifts weights at the,tensor(630),front,16
-he regularly lifts weights at the,tensor(126),first,17
-he regularly lifts weights at the,tensor(80),very,18
-he regularly lifts weights at the,tensor(245),hands,19
-he regularly lifts weights at the,tensor(1676),bottom,20
-he regularly lifts weights at the,tensor(3661),theatre,21
-he regularly lifts weights at the,tensor(748),beginning,22
-he regularly lifts weights at the,tensor(332),least,23
-he regularly lifts weights at the,tensor(5126),tables,24
-he regularly lifts weights at the,tensor(144),back,25
-she gave him a call on the,tensor(94),other,1
-she gave him a call on the,tensor(425),subject,2
-she gave him a call on the,tensor(123),way,3
-she gave him a call on the,tensor(1043),train,4
-she gave him a call on the,tensor(5030),piazza,5
-she gave him a call on the,tensor(979),occasion,6
-she gave him a call on the,tensor(4839),porch,7
-she gave him a call on the,tensor(113),old,8
-she gave him a call on the,tensor(1270),stage,9
-she gave him a call on the,tensor(537),street,10
-she gave him a call on the,tensor(3565),cars,11
-she gave him a call on the,tensor(10),"""",12
-she gave him a call on the,tensor(294),party,13
-she gave him a call on the,tensor(298),next,14
-she gave him a call on the,tensor(208),part,15
-she gave him a call on the,tensor(126),first,16
-she gave him a call on the,tensor(648),following,17
-she gave him a call on the,tensor(163),same,18
-she gave him a call on the,tensor(9366),staircase,19
-she gave him a call on the,tensor(1967),stairs,20
-she gave him a call on the,tensor(364),family,21
-she gave him a call on the,tensor(446),evening,22
-she gave him a call on the,tensor(27),UNK,23
-she gave him a call on the,tensor(1308),instant,24
-she gave him a call on the,tensor(128),day,25
-he took me for a ride in his,tensor(125),own,1
-he took me for a ride in his,tensor(1431),carriage,2
-he took me for a ride in his,tensor(3359),wagon,3
-he took me for a ride in his,tensor(7699),buggy,4
-he took me for a ride in his,tensor(541),arms,5
-he took me for a ride in his,tensor(1532),clothes,6
-he took me for a ride in his,tensor(835),boat,7
-he took me for a ride in his,tensor(4081),stable,8
-he took me for a ride in his,tensor(503),turn,9
-he took me for a ride in his,tensor(1202),garden,10
-he took me for a ride in his,tensor(4810),tent,11
-he took me for a ride in his,tensor(158),house,12
-he took me for a ride in his,tensor(224),room,13
-he took me for a ride in his,tensor(113),old,14
-he took me for a ride in his,tensor(90),little,15
-he took me for a ride in his,tensor(5649),coach,16
-he took me for a ride in his,tensor(7875),yacht,17
-he took me for a ride in his,tensor(130),new,18
-he took me for a ride in his,tensor(679),horse,19
-he took me for a ride in his,tensor(261),morning,20
-he took me for a ride in his,tensor(2121),car,21
-he took me for a ride in his,tensor(3201),walks,22
-he took me for a ride in his,tensor(724),arm,23
-he took me for a ride in his,tensor(170),place,24
-he took me for a ride in his,tensor(6778),pony,25
-they conducted experiments in the,tensor(163),same,1
-they conducted experiments in the,tensor(378),form,2
-they conducted experiments in the,tensor(123),way,3
-they conducted experiments in the,tensor(2008),courts,4
-they conducted experiments in the,tensor(465),different,5
-they conducted experiments in the,tensor(418),united,6
-they conducted experiments in the,tensor(15507),laboratory,7
-they conducted experiments in the,tensor(130),new,8
-they conducted experiments in the,tensor(127),most,9
-they conducted experiments in the,tensor(845),direction,10
-they conducted experiments in the,tensor(529),natural,11
-they conducted experiments in the,tensor(381),interest,12
-they conducted experiments in the,tensor(229),course,13
-they conducted experiments in the,tensor(27),UNK,14
-they conducted experiments in the,tensor(113),old,15
-they conducted experiments in the,tensor(819),various,16
-they conducted experiments in the,tensor(356),order,17
-they conducted experiments in the,tensor(1853),shape,18
-they conducted experiments in the,tensor(2990),construction,19
-they conducted experiments in the,tensor(1339),spiritual,20
-they conducted experiments in the,tensor(296),case,21
-they conducted experiments in the,tensor(10),"""",22
-they conducted experiments in the,tensor(389),art,23
-they conducted experiments in the,tensor(1010),lower,24
-they conducted experiments in the,tensor(415),early,25
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(288),year,1
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(626),class,2
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(6),.,3
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(4),",",4
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(8),and,5
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(44),or,6
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(170),place,7
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(448),town,8
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(31),at,9
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(253),days,10
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(14),i,11
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(506),school,12
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(24),;,13
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(27),UNK,14
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(2050),circle,15
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(155),years,16
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(955),century,17
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(7),of,18
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(639),week,19
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(12),in,20
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(1830),quarter,21
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(695),meeting,22
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(255),half,23
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(128),day,24
-i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,tensor(2020),ward,25
-the pri@@ mates most closely related to human@@ s are the,tensor(127),most,1
-the pri@@ mates most closely related to human@@ s are the,tensor(238),best,2
-the pri@@ mates most closely related to human@@ s are the,tensor(91),only,3
-the pri@@ mates most closely related to human@@ s are the,tensor(163),same,4
-the pri@@ mates most closely related to human@@ s are the,tensor(10),"""",5
-the pri@@ mates most closely related to human@@ s are the,tensor(107),two,6
-the pri@@ mates most closely related to human@@ s are the,tensor(103),great,7
-the pri@@ mates most closely related to human@@ s are the,tensor(1290),names,8
-the pri@@ mates most closely related to human@@ s are the,tensor(115),men,9
-the pri@@ mates most closely related to human@@ s are the,tensor(80),very,10
-the pri@@ mates most closely related to human@@ s are the,tensor(70),more,11
-the pri@@ mates most closely related to human@@ s are the,tensor(27),UNK,12
-the pri@@ mates most closely related to human@@ s are the,tensor(311),children,13
-the pri@@ mates most closely related to human@@ s are the,tensor(283),words,14
-the pri@@ mates most closely related to human@@ s are the,tensor(295),white,15
-the pri@@ mates most closely related to human@@ s are the,tensor(126),first,16
-the pri@@ mates most closely related to human@@ s are the,tensor(139),people,17
-the pri@@ mates most closely related to human@@ s are the,tensor(113),old,18
-the pri@@ mates most closely related to human@@ s are the,tensor(2428),gods,19
-the pri@@ mates most closely related to human@@ s are the,tensor(671),members,20
-the pri@@ mates most closely related to human@@ s are the,tensor(648),following,21
-the pri@@ mates most closely related to human@@ s are the,tensor(7263),descendants,22
-the pri@@ mates most closely related to human@@ s are the,tensor(4490),authors,23
-the pri@@ mates most closely related to human@@ s are the,tensor(198),three,24
-the pri@@ mates most closely related to human@@ s are the,tensor(182),few,25
-she asked him to speak clearly into the,tensor(270),matter,1
-she asked him to speak clearly into the,tensor(652),tone,2
-she asked him to speak clearly into the,tensor(167),face,3
-she asked him to speak clearly into the,tensor(425),subject,4
-she asked him to speak clearly into the,tensor(977),language,5
-she asked him to speak clearly into the,tensor(691),presence,6
-she asked him to speak clearly into the,tensor(1018),conversation,7
-she asked him to speak clearly into the,tensor(309),child,8
-she asked him to speak clearly into the,tensor(283),words,9
-she asked him to speak clearly into the,tensor(1489),ear,10
-she asked him to speak clearly into the,tensor(413),letter,11
-she asked him to speak clearly into the,tensor(437),manner,12
-she asked him to speak clearly into the,tensor(158),house,13
-she asked him to speak clearly into the,tensor(207),night,14
-she asked him to speak clearly into the,tensor(267),girl,15
-she asked him to speak clearly into the,tensor(27),UNK,16
-she asked him to speak clearly into the,tensor(308),question,17
-she asked him to speak clearly into the,tensor(449),talk,18
-she asked him to speak clearly into the,tensor(90),little,19
-she asked him to speak clearly into the,tensor(224),room,20
-she asked him to speak clearly into the,tensor(850),hall,21
-she asked him to speak clearly into the,tensor(558),answer,22
-she asked him to speak clearly into the,tensor(113),old,23
-she asked him to speak clearly into the,tensor(4064),text,24
-she asked him to speak clearly into the,tensor(160),young,25
-the car was running low on,tensor(5),the,1
-the car was running low on,tensor(11),a,2
-the car was running low on,tensor(47),one,3
-the car was running low on,tensor(73),its,4
-the car was running low on,tensor(19),his,5
-the car was running low on,tensor(412),either,6
-the car was running low on,tensor(795),foot,7
-the car was running low on,tensor(1003),top,8
-the car was running low on,tensor(30),her,9
-the car was running low on,tensor(596),account,10
-the car was running low on,tensor(37),this,11
-the car was running low on,tensor(13),that,12
-the car was running low on,tensor(42),all,13
-the car was running low on,tensor(665),board,14
-the car was running low on,tensor(215),both,15
-the car was running low on,tensor(135),every,16
-the car was running low on,tensor(51),my,17
-the car was running low on,tensor(107),two,18
-the car was running low on,tensor(58),their,19
-the car was running low on,tensor(50),an,20
-the car was running low on,tensor(27),UNK,21
-the car was running low on,tensor(3199),saturday,22
-the car was running low on,tensor(352),high,23
-the car was running low on,tensor(76),some,24
-the car was running low on,tensor(15),it,25
-we bought the sandwich meat from the,tensor(2331),farmer,1
-we bought the sandwich meat from the,tensor(434),english,2
-we bought the sandwich meat from the,tensor(94),other,3
-we bought the sandwich meat from the,tensor(113),old,4
-we bought the sandwich meat from the,tensor(10),"""",5
-we bought the sandwich meat from the,tensor(980),east,6
-we bought the sandwich meat from the,tensor(27),UNK,7
-we bought the sandwich meat from the,tensor(126),first,8
-we bought the sandwich meat from the,tensor(6434),natives,9
-we bought the sandwich meat from the,tensor(103),great,10
-we bought the sandwich meat from the,tensor(366),american,11
-we bought the sandwich meat from the,tensor(295),white,12
-we bought the sandwich meat from the,tensor(160),young,13
-we bought the sandwich meat from the,tensor(401),captain,14
-we bought the sandwich meat from the,tensor(2416),chinese,15
-we bought the sandwich meat from the,tensor(1057),governor,16
-we bought the sandwich meat from the,tensor(439),king,17
-we bought the sandwich meat from the,tensor(708),french,18
-we bought the sandwich meat from the,tensor(526),red,19
-we bought the sandwich meat from the,tensor(13873),mainland,20
-we bought the sandwich meat from the,tensor(478),boys,21
-we bought the sandwich meat from the,tensor(1418),fish,22
-we bought the sandwich meat from the,tensor(139),people,23
-we bought the sandwich meat from the,tensor(1200),prince,24
-we bought the sandwich meat from the,tensor(414),lord,25
-the guitar was not plu@@ gged in to the,tensor(4067),depth,1
-the guitar was not plu@@ gged in to the,tensor(1153),extent,2
-the guitar was not plu@@ gged in to the,tensor(1852),height,3
-the guitar was not plu@@ gged in to the,tensor(1313),taste,4
-the guitar was not plu@@ gged in to the,tensor(355),air,5
-the guitar was not plu@@ gged in to the,tensor(1894),size,6
-the guitar was not plu@@ gged in to the,tensor(523),effect,7
-the guitar was not plu@@ gged in to the,tensor(80),very,8
-the guitar was not plu@@ gged in to the,tensor(360),point,9
-the guitar was not plu@@ gged in to the,tensor(932),floor,10
-the guitar was not plu@@ gged in to the,tensor(710),music,11
-the guitar was not plu@@ gged in to the,tensor(27),UNK,12
-the guitar was not plu@@ gged in to the,tensor(13335),brim,13
-the guitar was not plu@@ gged in to the,tensor(1245),touch,14
-the guitar was not plu@@ gged in to the,tensor(6091),tune,15
-the guitar was not plu@@ gged in to the,tensor(238),best,16
-the guitar was not plu@@ gged in to the,tensor(6863),pitch,17
-the guitar was not plu@@ gged in to the,tensor(307),end,18
-the guitar was not plu@@ gged in to the,tensor(153),last,19
-the guitar was not plu@@ gged in to the,tensor(86),time,20
-the guitar was not plu@@ gged in to the,tensor(2617),charm,21
-the guitar was not plu@@ gged in to the,tensor(979),occasion,22
-the guitar was not plu@@ gged in to the,tensor(373),hour,23
-the guitar was not plu@@ gged in to the,tensor(517),purpose,24
-the guitar was not plu@@ gged in to the,tensor(241),moment,25
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(5),the,1
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(58),their,2
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(66),them,3
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(72),out,4
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(11),a,5
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(15),it,6
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(6),.,7
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(32),on,8
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(188),off,9
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(4),",",10
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(8),and,11
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(1532),clothes,12
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(3537),clothing,13
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(27),UNK,14
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(78),upon,15
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(12),in,16
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(55),no,17
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(22),with,18
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(136),too,19
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(96),such,20
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(13),that,21
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(760),heavy,22
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(7),of,23
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(50),an,24
-it was difficult to spot the soldiers in the forest because they were wearing,tensor(9),to,25
-the doctors said the only way to treat the cancer was with,tensor(66),them,1
-the doctors said the only way to treat the cancer was with,tensor(5),the,2
-the doctors said the only way to treat the cancer was with,tensor(43),him,3
-the doctors said the only way to treat the cancer was with,tensor(30),her,4
-the doctors said the only way to treat the cancer was with,tensor(11),a,5
-the doctors said the only way to treat the cancer was with,tensor(57),me,6
-the doctors said the only way to treat the cancer was with,tensor(89),mr.,7
-the doctors said the only way to treat the cancer was with,tensor(146),mrs.,8
-the doctors said the only way to treat the cancer was with,tensor(134),those,9
-the doctors said the only way to treat the cancer was with,tensor(76),some,10
-the doctors said the only way to treat the cancer was with,tensor(112),us,11
-the doctors said the only way to treat the cancer was with,tensor(19),his,12
-the doctors said the only way to treat the cancer was with,tensor(103),great,13
-the doctors said the only way to treat the cancer was with,tensor(13),that,14
-the doctors said the only way to treat the cancer was with,tensor(58),their,15
-the doctors said the only way to treat the cancer was with,tensor(602),regard,16
-the doctors said the only way to treat the cancer was with,tensor(23),you,17
-the doctors said the only way to treat the cancer was with,tensor(566),dr.,18
-the doctors said the only way to treat the cancer was with,tensor(96),such,19
-the doctors said the only way to treat the cancer was with,tensor(127),most,20
-the doctors said the only way to treat the cancer was with,tensor(42),all,21
-the doctors said the only way to treat the cancer was with,tensor(27),UNK,22
-the doctors said the only way to treat the cancer was with,tensor(55),no,23
-the doctors said the only way to treat the cancer was with,tensor(50),an,24
-the doctors said the only way to treat the cancer was with,tensor(67),what,25
-the famous ja@@ z@@ z musician played a,tensor(208),part,1
-the famous ja@@ z@@ z musician played a,tensor(103),great,2
-the famous ja@@ z@@ z musician played a,tensor(6091),tune,3
-the famous ja@@ z@@ z musician played a,tensor(2739),prominent,4
-the famous ja@@ z@@ z musician played a,tensor(551),fine,5
-the famous ja@@ z@@ z musician played a,tensor(5018),trick,6
-the famous ja@@ z@@ z musician played a,tensor(80),very,7
-the famous ja@@ z@@ z musician played a,tensor(90),little,8
-the famous ja@@ z@@ z musician played a,tensor(1514),game,9
-the famous ja@@ z@@ z musician played a,tensor(3592),lively,10
-the famous ja@@ z@@ z musician played a,tensor(1898),famous,11
-the famous ja@@ z@@ z musician played a,tensor(2712),dance,12
-the famous ja@@ z@@ z musician played a,tensor(480),second,13
-the famous ja@@ z@@ z musician played a,tensor(1265),song,14
-the famous ja@@ z@@ z musician played a,tensor(3474),conspicuous,15
-the famous ja@@ z@@ z musician played a,tensor(2234),solemn,16
-the famous ja@@ z@@ z musician played a,tensor(1087),grand,17
-the famous ja@@ z@@ z musician played a,tensor(539),strange,18
-the famous ja@@ z@@ z musician played a,tensor(1252),terrible,19
-the famous ja@@ z@@ z musician played a,tensor(254),large,20
-the famous ja@@ z@@ z musician played a,tensor(11057),role,21
-the famous ja@@ z@@ z musician played a,tensor(498),short,22
-the famous ja@@ z@@ z musician played a,tensor(500),sort,23
-the famous ja@@ z@@ z musician played a,tensor(1761),series,24
-the famous ja@@ z@@ z musician played a,tensor(131),long,25
+he regularly lifts weights at the,163,same,1
+he regularly lifts weights at the,86,time,2
+he regularly lifts weights at the,307,end,3
+he regularly lifts weights at the,2481,bar,4
+he regularly lifts weights at the,360,point,5
+he regularly lifts weights at the,1003,top,6
+he regularly lifts weights at the,205,head,7
+he regularly lifts weights at the,318,word,8
+he regularly lifts weights at the,489,table,9
+he regularly lifts weights at the,2392,mercy,10
+he regularly lifts weights at the,2485,expense,11
+he regularly lifts weights at the,241,moment,12
+he regularly lifts weights at the,1162,rate,13
+he regularly lifts weights at the,1476,sides,14
+he regularly lifts weights at the,172,right,15
+he regularly lifts weights at the,630,front,16
+he regularly lifts weights at the,126,first,17
+he regularly lifts weights at the,80,very,18
+he regularly lifts weights at the,245,hands,19
+he regularly lifts weights at the,1676,bottom,20
+he regularly lifts weights at the,3661,theatre,21
+he regularly lifts weights at the,748,beginning,22
+he regularly lifts weights at the,332,least,23
+he regularly lifts weights at the,5126,tables,24
+he regularly lifts weights at the,144,back,25
+she gave him a call on the,94,other,1
+she gave him a call on the,425,subject,2
+she gave him a call on the,123,way,3
+she gave him a call on the,1043,train,4
+she gave him a call on the,5030,piazza,5
+she gave him a call on the,979,occasion,6
+she gave him a call on the,4839,porch,7
+she gave him a call on the,113,old,8
+she gave him a call on the,1270,stage,9
+she gave him a call on the,537,street,10
+she gave him a call on the,3565,cars,11
+she gave him a call on the,10,"""",12
+she gave him a call on the,294,party,13
+she gave him a call on the,298,next,14
+she gave him a call on the,208,part,15
+she gave him a call on the,126,first,16
+she gave him a call on the,648,following,17
+she gave him a call on the,163,same,18
+she gave him a call on the,9366,staircase,19
+she gave him a call on the,1967,stairs,20
+she gave him a call on the,364,family,21
+she gave him a call on the,446,evening,22
+she gave him a call on the,27,UNK,23
+she gave him a call on the,1308,instant,24
+she gave him a call on the,128,day,25
+he took me for a ride in his,125,own,1
+he took me for a ride in his,1431,carriage,2
+he took me for a ride in his,3359,wagon,3
+he took me for a ride in his,7699,buggy,4
+he took me for a ride in his,541,arms,5
+he took me for a ride in his,1532,clothes,6
+he took me for a ride in his,835,boat,7
+he took me for a ride in his,4081,stable,8
+he took me for a ride in his,503,turn,9
+he took me for a ride in his,1202,garden,10
+he took me for a ride in his,4810,tent,11
+he took me for a ride in his,158,house,12
+he took me for a ride in his,224,room,13
+he took me for a ride in his,113,old,14
+he took me for a ride in his,90,little,15
+he took me for a ride in his,5649,coach,16
+he took me for a ride in his,7875,yacht,17
+he took me for a ride in his,130,new,18
+he took me for a ride in his,679,horse,19
+he took me for a ride in his,261,morning,20
+he took me for a ride in his,2121,car,21
+he took me for a ride in his,3201,walks,22
+he took me for a ride in his,724,arm,23
+he took me for a ride in his,170,place,24
+he took me for a ride in his,6778,pony,25
+they conducted experiments in the,163,same,1
+they conducted experiments in the,378,form,2
+they conducted experiments in the,123,way,3
+they conducted experiments in the,2008,courts,4
+they conducted experiments in the,465,different,5
+they conducted experiments in the,418,united,6
+they conducted experiments in the,15507,laboratory,7
+they conducted experiments in the,130,new,8
+they conducted experiments in the,127,most,9
+they conducted experiments in the,845,direction,10
+they conducted experiments in the,529,natural,11
+they conducted experiments in the,381,interest,12
+they conducted experiments in the,229,course,13
+they conducted experiments in the,27,UNK,14
+they conducted experiments in the,113,old,15
+they conducted experiments in the,819,various,16
+they conducted experiments in the,356,order,17
+they conducted experiments in the,1853,shape,18
+they conducted experiments in the,2990,construction,19
+they conducted experiments in the,1339,spiritual,20
+they conducted experiments in the,296,case,21
+they conducted experiments in the,10,"""",22
+they conducted experiments in the,389,art,23
+they conducted experiments in the,1010,lower,24
+they conducted experiments in the,415,early,25
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,288,year,1
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,626,class,2
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,6,.,3
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,4,",",4
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,8,and,5
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,44,or,6
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,170,place,7
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,448,town,8
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,31,at,9
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,253,days,10
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,14,i,11
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,506,school,12
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,24,;,13
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,27,UNK,14
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,2050,circle,15
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,155,years,16
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,955,century,17
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,7,of,18
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,639,week,19
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,12,in,20
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,1830,quarter,21
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,695,meeting,22
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,255,half,23
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,128,day,24
+i met my roo@@ m@@ mate when we lived together in the univers@@ it@@ y@@ 's freshman,2020,ward,25
+the pri@@ mates most closely related to human@@ s are called,1413,th@@,1
+the pri@@ mates most closely related to human@@ s are called,10,"""",2
+the pri@@ mates most closely related to human@@ s are called,5,the,3
+the pri@@ mates most closely related to human@@ s are called,700,di@@,4
+the pri@@ mates most closely related to human@@ s are called,581,k@@,5
+the pri@@ mates most closely related to human@@ s are called,3148,che@@,6
+the pri@@ mates most closely related to human@@ s are called,39,',7
+the pri@@ mates most closely related to human@@ s are called,848,m@@,8
+the pri@@ mates most closely related to human@@ s are called,621,y@@,9
+the pri@@ mates most closely related to human@@ s are called,2191,gi@@,10
+the pri@@ mates most closely related to human@@ s are called,3611,fer@@,11
+the pri@@ mates most closely related to human@@ s are called,570,i@@,12
+the pri@@ mates most closely related to human@@ s are called,4,",",13
+the pri@@ mates most closely related to human@@ s are called,2935,ten@@,14
+the pri@@ mates most closely related to human@@ s are called,1168,h@@,15
+the pri@@ mates most closely related to human@@ s are called,3495,pan@@,16
+the pri@@ mates most closely related to human@@ s are called,13680,acids,17
+the pri@@ mates most closely related to human@@ s are called,754,p@@,18
+the pri@@ mates most closely related to human@@ s are called,806,le@@,19
+the pri@@ mates most closely related to human@@ s are called,11,a,20
+the pri@@ mates most closely related to human@@ s are called,490,o@@,21
+the pri@@ mates most closely related to human@@ s are called,1027,z@@,22
+the pri@@ mates most closely related to human@@ s are called,2170,fe@@,23
+the pri@@ mates most closely related to human@@ s are called,33,by,24
+the pri@@ mates most closely related to human@@ s are called,991,pe@@,25
+she asked him to speak clearly into the,270,matter,1
+she asked him to speak clearly into the,652,tone,2
+she asked him to speak clearly into the,167,face,3
+she asked him to speak clearly into the,425,subject,4
+she asked him to speak clearly into the,977,language,5
+she asked him to speak clearly into the,691,presence,6
+she asked him to speak clearly into the,1018,conversation,7
+she asked him to speak clearly into the,309,child,8
+she asked him to speak clearly into the,283,words,9
+she asked him to speak clearly into the,1489,ear,10
+she asked him to speak clearly into the,413,letter,11
+she asked him to speak clearly into the,437,manner,12
+she asked him to speak clearly into the,158,house,13
+she asked him to speak clearly into the,207,night,14
+she asked him to speak clearly into the,267,girl,15
+she asked him to speak clearly into the,27,UNK,16
+she asked him to speak clearly into the,308,question,17
+she asked him to speak clearly into the,449,talk,18
+she asked him to speak clearly into the,90,little,19
+she asked him to speak clearly into the,224,room,20
+she asked him to speak clearly into the,850,hall,21
+she asked him to speak clearly into the,558,answer,22
+she asked him to speak clearly into the,113,old,23
+she asked him to speak clearly into the,4064,text,24
+she asked him to speak clearly into the,160,young,25
+we have been driving less and less due to the price of,5,the,1
+we have been driving less and less due to the price of,2659,coal,2
+we have been driving less and less due to the price of,92,our,3
+we have been driving less and less due to the price of,11,a,4
+we have been driving less and less due to the price of,58,their,5
+we have been driving less and less due to the price of,3058,wheat,6
+we have been driving less and less due to the price of,1091,food,7
+we have been driving less and less due to the price of,706,labor,8
+we have been driving less and less due to the price of,555,real,9
+we have been driving less and less due to the price of,98,these,10
+we have been driving less and less due to the price of,2554,oil,11
+we have been driving less and less due to the price of,3748,grain,12
+we have been driving less and less due to the price of,331,land,13
+we have been driving less and less due to the price of,66,them,14
+we have been driving less and less due to the price of,1958,railway,15
+we have been driving less and less due to the price of,4775,freight,16
+we have been driving less and less due to the price of,121,life,17
+we have been driving less and less due to the price of,19,his,18
+we have been driving less and less due to the price of,15,it,19
+we have been driving less and less due to the price of,37,this,20
+we have been driving less and less due to the price of,189,each,21
+we have been driving less and less due to the price of,2076,goods,22
+we have been driving less and less due to the price of,1064,horses,23
+we have been driving less and less due to the price of,5123,raw,24
+we have been driving less and less due to the price of,3217,gas,25
+we bought sandwich meat from the,94,other,1
+we bought sandwich meat from the,103,great,2
+we bought sandwich meat from the,434,english,3
+we bought sandwich meat from the,113,old,4
+we bought sandwich meat from the,980,east,5
+we bought sandwich meat from the,2331,farmer,6
+we bought sandwich meat from the,13873,mainland,7
+we bought sandwich meat from the,203,country,8
+we bought sandwich meat from the,439,king,9
+we bought sandwich meat from the,10,"""",10
+we bought sandwich meat from the,177,world,11
+we bought sandwich meat from the,414,lord,12
+we bought sandwich meat from the,366,american,13
+we bought sandwich meat from the,139,people,14
+we bought sandwich meat from the,708,french,15
+we bought sandwich meat from the,1062,british,16
+we bought sandwich meat from the,2416,chinese,17
+we bought sandwich meat from the,27,UNK,18
+we bought sandwich meat from the,624,north,19
+we bought sandwich meat from the,376,rest,20
+we bought sandwich meat from the,126,first,21
+we bought sandwich meat from the,635,rich,22
+we bought sandwich meat from the,130,new,23
+we bought sandwich meat from the,273,poor,24
+we bought sandwich meat from the,526,red,25
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,153,last,1
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,307,end,2
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,710,music,3
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,1313,taste,4
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,6091,tune,5
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,1153,extent,6
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,1894,size,7
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,80,very,8
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,2042,contrary,9
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,27,UNK,10
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,355,air,11
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,238,best,12
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,4132,piano,13
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,523,effect,14
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,127,most,15
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,932,floor,16
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,551,fine,17
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,6863,pitch,18
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,1676,bottom,19
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,1003,top,20
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,1145,fancy,21
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,86,time,22
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,2617,charm,23
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,94,other,24
+we coul@@ d@@ n't hear anything because the guitar was not plu@@ gged in to the,861,ladies,25
+it was difficult to spot the soldiers in the forest because they were wearing,5,the,1
+it was difficult to spot the soldiers in the forest because they were wearing,58,their,2
+it was difficult to spot the soldiers in the forest because they were wearing,66,them,3
+it was difficult to spot the soldiers in the forest because they were wearing,72,out,4
+it was difficult to spot the soldiers in the forest because they were wearing,11,a,5
+it was difficult to spot the soldiers in the forest because they were wearing,15,it,6
+it was difficult to spot the soldiers in the forest because they were wearing,6,.,7
+it was difficult to spot the soldiers in the forest because they were wearing,32,on,8
+it was difficult to spot the soldiers in the forest because they were wearing,188,off,9
+it was difficult to spot the soldiers in the forest because they were wearing,4,",",10
+it was difficult to spot the soldiers in the forest because they were wearing,8,and,11
+it was difficult to spot the soldiers in the forest because they were wearing,1532,clothes,12
+it was difficult to spot the soldiers in the forest because they were wearing,3537,clothing,13
+it was difficult to spot the soldiers in the forest because they were wearing,27,UNK,14
+it was difficult to spot the soldiers in the forest because they were wearing,78,upon,15
+it was difficult to spot the soldiers in the forest because they were wearing,12,in,16
+it was difficult to spot the soldiers in the forest because they were wearing,55,no,17
+it was difficult to spot the soldiers in the forest because they were wearing,22,with,18
+it was difficult to spot the soldiers in the forest because they were wearing,136,too,19
+it was difficult to spot the soldiers in the forest because they were wearing,96,such,20
+it was difficult to spot the soldiers in the forest because they were wearing,13,that,21
+it was difficult to spot the soldiers in the forest because they were wearing,760,heavy,22
+it was difficult to spot the soldiers in the forest because they were wearing,7,of,23
+it was difficult to spot the soldiers in the forest because they were wearing,50,an,24
+it was difficult to spot the soldiers in the forest because they were wearing,9,to,25
+the doctors said the only way to treat the cancer was with a round of,139,people,1
+the doctors said the only way to treat the cancer was with a round of,115,men,2
+the doctors said the only way to treat the cancer was with a round of,1522,patient,3
+the doctors said the only way to treat the cancer was with a round of,1230,pain,4
+the doctors said the only way to treat the cancer was with a round of,5,the,5
+the doctors said the only way to treat the cancer was with a round of,406,women,6
+the doctors said the only way to treat the cancer was with a round of,245,hands,7
+the doctors said the only way to treat the cancer was with a round of,478,boys,8
+the doctors said the only way to treat the cancer was with a round of,6753,patients,9
+the doctors said the only way to treat the cancer was with a round of,4592,nerves,10
+the doctors said the only way to treat the cancer was with a round of,27,UNK,11
+the doctors said the only way to treat the cancer was with a round of,160,young,12
+the doctors said the only way to treat the cancer was with a round of,169,eyes,13
+the doctors said the only way to treat the cancer was with a round of,6594,doctors,14
+the doctors said the only way to treat the cancer was with a round of,1002,sick,15
+the doctors said the only way to treat the cancer was with a round of,587,persons,16
+the doctors said the only way to treat the cancer was with a round of,4528,workmen,17
+the doctors said the only way to treat the cancer was with a round of,533,cold,18
+the doctors said the only way to treat the cancer was with a round of,2699,cur@@,19
+the doctors said the only way to treat the cancer was with a round of,2798,fever,20
+the doctors said the only way to treat the cancer was with a round of,2108,fellows,21
+the doctors said the only way to treat the cancer was with a round of,202,mind,22
+the doctors said the only way to treat the cancer was with a round of,3177,finger,23
+the doctors said the only way to treat the cancer was with a round of,13144,paralysis,24
+the doctors said the only way to treat the cancer was with a round of,66,them,25
+the bill was signed into law by president,1056,arthur,1
+the bill was signed into law by president,9982,hayes,2
+the bill was signed into law by president,5968,garfield,3
+the bill was signed into law by president,3602,johnson,4
+the bill was signed into law by president,1873,lincoln,5
+the bill was signed into law by president,4195,cleveland,6
+the bill was signed into law by president,5578,harrison,7
+the bill was signed into law by president,881,grant,8
+the bill was signed into law by president,314,john,9
+the bill was signed into law by president,4101,adams,10
+the bill was signed into law by president,2517,van,11
+the bill was signed into law by president,12051,dwight,12
+the bill was signed into law by president,1212,or@@,13
+the bill was signed into law by president,2291,jackson,14
+the bill was signed into law by president,10965,monroe,15
+the bill was signed into law by president,5353,seward,16
+the bill was signed into law by president,740,grace,17
+the bill was signed into law by president,8361,pierce,18
+the bill was signed into law by president,3452,joseph,19
+the bill was signed into law by president,3210,howe,20
+the bill was signed into law by president,7859,madison,21
+the bill was signed into law by president,1000,james,22
+the bill was signed into law by president,26300,woolsey,23
+the bill was signed into law by president,10865,eliot,24
+the bill was signed into law by president,1118,gray,25
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,474,nearly,1
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,93,about,2
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,111,over,3
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,11,a,4
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,7877,200,5
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,9,to,6
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,255,half,7
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,91,only,8
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,1276,fifty,9
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,1711,thirty,10
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,107,two,11
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,5756,40,12
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,29,but,13
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,12,in,14
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,5,the,15
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,47,one,16
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,6667,60,17
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,1249,4@@,18
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,49,so,19
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,2059,forty,20
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,890,twenty,21
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,3697,sixty,22
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,1588,twelve,23
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,76,some,24
+the american flag has red and white stripes with a blue field in the upper left corner covered in white stars numbering,198,three,25
+the tal@@ lest building in the world towers over the sky@@ line of,5,the,1
+the tal@@ lest building in the world towers over the sky@@ line of,11,a,2
+the tal@@ lest building in the world towers over the sky@@ line of,577,heaven,3
+the tal@@ lest building in the world towers over the sky@@ line of,76,some,4
+the tal@@ lest building in the world towers over the sky@@ line of,73,its,5
+the tal@@ lest building in the world towers over the sky@@ line of,92,our,6
+the tal@@ lest building in the world towers over the sky@@ line of,50,an,7
+the tal@@ lest building in the world towers over the sky@@ line of,37,this,8
+the tal@@ lest building in the world towers over the sky@@ line of,88,your,9
+the tal@@ lest building in the world towers over the sky@@ line of,27,UNK,10
+the tal@@ lest building in the world towers over the sky@@ line of,113,old,11
+the tal@@ lest building in the world towers over the sky@@ line of,38,which,12
+the tal@@ lest building in the world towers over the sky@@ line of,325,death,13
+the tal@@ lest building in the world towers over the sky@@ line of,13,that,14
+the tal@@ lest building in the world towers over the sky@@ line of,130,new,15
+the tal@@ lest building in the world towers over the sky@@ line of,19,his,16
+the tal@@ lest building in the world towers over the sky@@ line of,58,their,17
+the tal@@ lest building in the world towers over the sky@@ line of,1408,lake,18
+the tal@@ lest building in the world towers over the sky@@ line of,731,st.,19
+the tal@@ lest building in the world towers over the sky@@ line of,240,god,20
+the tal@@ lest building in the world towers over the sky@@ line of,274,nature,21
+the tal@@ lest building in the world towers over the sky@@ line of,82,any,22
+the tal@@ lest building in the world towers over the sky@@ line of,47,one,23
+the tal@@ lest building in the world towers over the sky@@ line of,148,thought,24
+the tal@@ lest building in the world towers over the sky@@ line of,1569,civilization,25
+next in line to the british throne is,5,the,1
+next in line to the british throne is,9,to,2
+next in line to the british throne is,11,a,3
+next in line to the british throne is,13,that,4
+next in line to the british throne is,50,an,5
+next in line to the british throne is,12,in,6
+next in line to the british throne is,4,",",7
+next in line to the british throne is,25,not,8
+next in line to the british throne is,47,one,9
+next in line to the british throne is,164,found,10
+next in line to the british throne is,37,this,11
+next in line to the british throne is,20,as,12
+next in line to the british throne is,971,shown,13
+next in line to the british throne is,162,still,14
+next in line to the british throne is,246,called,15
+next in line to the british throne is,93,about,16
+next in line to the british throne is,33,by,17
+next in line to the british throne is,15,it,18
+next in line to the british throne is,180,another,19
+next in line to the british throne is,290,given,20
+next in line to the british throne is,7,of,21
+next in line to the british throne is,10,"""",22
+next in line to the british throne is,218,also,23
+next in line to the british throne is,27,UNK,24
+next in line to the british throne is,31,at,25
+"the weal@@ thiest man in the world@@ ,",8,and,1
+"the weal@@ thiest man in the world@@ ,",5,the,2
+"the weal@@ thiest man in the world@@ ,",63,who,3
+"the weal@@ thiest man in the world@@ ,",44,or,4
+"the weal@@ thiest man in the world@@ ,",20,as,5
+"the weal@@ thiest man in the world@@ ,",10,"""",6
+"the weal@@ thiest man in the world@@ ,",9,to,7
+"the weal@@ thiest man in the world@@ ,",29,but,8
+"the weal@@ thiest man in the world@@ ,",21,for,9
+"the weal@@ thiest man in the world@@ ,",12,in,10
+"the weal@@ thiest man in the world@@ ,",17,was,11
+"the weal@@ thiest man in the world@@ ,",18,is,12
+"the weal@@ thiest man in the world@@ ,",7,of,13
+"the weal@@ thiest man in the world@@ ,",16,he,14
+"the weal@@ thiest man in the world@@ ,",11,a,15
+"the weal@@ thiest man in the world@@ ,",28,had,16
+"the weal@@ thiest man in the world@@ ,",13,that,17
+"the weal@@ thiest man in the world@@ ,",22,with,18
+"the weal@@ thiest man in the world@@ ,",39,',19
+"the weal@@ thiest man in the world@@ ,",59,if,20
+"the weal@@ thiest man in the world@@ ,",97,-,21
+"the weal@@ thiest man in the world@@ ,",14,i,22
+"the weal@@ thiest man in the world@@ ,",249,whose,23
+"the weal@@ thiest man in the world@@ ,",75,could,24
+"the weal@@ thiest man in the world@@ ,",25,not,25
+the population of the world recently surpassed,5,the,1
+the population of the world recently surpassed,12,in,2
+the population of the world recently surpassed,6,.,3
+the population of the world recently surpassed,4,",",4
+the population of the world recently surpassed,42,all,5
+the population of the world recently surpassed,134,those,6
+the population of the world recently surpassed,13,that,7
+the population of the world recently surpassed,33,by,8
+the population of the world recently surpassed,43,him,9
+the population of the world recently surpassed,15,it,10
+the population of the world recently surpassed,281,anything,11
+the population of the world recently surpassed,73,its,12
+the population of the world recently surpassed,19,his,13
+the population of the world recently surpassed,66,them,14
+the population of the world recently surpassed,37,this,15
+the population of the world recently surpassed,82,any,16
+the population of the world recently surpassed,58,their,17
+the population of the world recently surpassed,30,her,18
+the population of the world recently surpassed,24,;,19
+the population of the world recently surpassed,11,a,20
+the population of the world recently surpassed,230,among,21
+the population of the world recently surpassed,8,and,22
+the population of the world recently surpassed,27,UNK,23
+the population of the world recently surpassed,46,?,24
+the population of the world recently surpassed,89,mr.,25
+"the world@@ 's most populous nation@@ ,",8,and,1
+"the world@@ 's most populous nation@@ ,",22,with,2
+"the world@@ 's most populous nation@@ ,",5,the,3
+"the world@@ 's most populous nation@@ ,",29,but,4
+"the world@@ 's most populous nation@@ ,",174,though,5
+"the world@@ 's most populous nation@@ ,",179,un@@,6
+"the world@@ 's most populous nation@@ ,",156,yet,7
+"the world@@ 's most populous nation@@ ,",4960,prosperous,8
+"the world@@ 's most populous nation@@ ,",1856,well-@@,9
+"the world@@ 's most populous nation@@ ,",1795,eager,10
+"the world@@ 's most populous nation@@ ,",6616,aristocratic,11
+"the world@@ 's most populous nation@@ ,",137,even,12
+"the world@@ 's most populous nation@@ ,",44,or,13
+"the world@@ 's most populous nation@@ ,",10,"""",14
+"the world@@ 's most populous nation@@ ,",1660,active,15
+"the world@@ 's most populous nation@@ ,",2074,loving,16
+"the world@@ 's most populous nation@@ ,",1294,self-@@,17
+"the world@@ 's most populous nation@@ ,",8149,noisy,18
+"the world@@ 's most populous nation@@ ,",3866,industrial,19
+"the world@@ 's most populous nation@@ ,",11,a,20
+"the world@@ 's most populous nation@@ ,",3674,peaceful,21
+"the world@@ 's most populous nation@@ ,",3619,ser@@,22
+"the world@@ 's most populous nation@@ ,",20,as,23
+"the world@@ 's most populous nation@@ ,",4293,cambridge,24
+"the world@@ 's most populous nation@@ ,",3348,vigorous,25
+the smallest planet in the solar system was named,5,the,1
+the smallest planet in the solar system was named,4,",",2
+the smallest planet in the solar system was named,33,by,3
+the smallest planet in the solar system was named,12,in,4
+the smallest planet in the solar system was named,6,.,5
+the smallest planet in the solar system was named,10,"""",6
+the smallest planet in the solar system was named,11,a,7
+the smallest planet in the solar system was named,20,as,8
+the smallest planet in the solar system was named,40,from,9
+the smallest planet in the solar system was named,24,;,10
+the smallest planet in the solar system was named,109,after,11
+the smallest planet in the solar system was named,32,on,12
+the smallest planet in the solar system was named,9,to,13
+the smallest planet in the solar system was named,47,one,14
+the smallest planet in the solar system was named,212,because,15
+the smallest planet in the solar system was named,21,for,16
+the smallest planet in the solar system was named,8,and,17
+the smallest planet in the solar system was named,50,an,18
+the smallest planet in the solar system was named,64,when,19
+the smallest planet in the solar system was named,31,at,20
+the smallest planet in the solar system was named,72,out,21
+the smallest planet in the solar system was named,13,that,22
+the smallest planet in the solar system was named,38,which,23
+the smallest planet in the solar system was named,27,UNK,24
+the smallest planet in the solar system was named,2222,op@@,25
