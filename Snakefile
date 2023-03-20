@@ -403,3 +403,20 @@ rule next_word_pred:
 rule next_word_pred_all:
     input:
         expand("data/next_word_pred/model_results/{decade}/predictions.csv", decade=DECADES),
+
+
+rule find_word_pairs:
+    input:
+        "data/freq_analysis/delta_freqs.csv"
+    output:
+        "data/word_pairs/output.csv"
+    resources:
+        runtime=720,
+        mem_mb=8000,
+        slurm_account="evlab",
+    shell:
+        """
+        mkdir -p data/word_pairs
+        cd src
+        python find_word_pairs.py
+        """
