@@ -36,6 +36,8 @@ if __name__ == "__main__":
                         }
                     )
     df = pd.DataFrame(data)
+    df["wc"] = df.groupby("word")["word"].transform("count")
+    df = df[df.wc >= 100]
     df = df.groupby("word").sample(n=100).reset_index()
 
     # calculate per-word surprisals for each sentence using modern data LM
