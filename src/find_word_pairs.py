@@ -52,7 +52,7 @@ if __name__ == "__main__":
     )
 
     surprisals = []
-    for sentence in bpe.apply(df.sentence):
+    for sentence in tqdm(bpe.apply(df.sentence)):
         if custom_lm.encode(sentence).size(0) > custom_lm.max_positions - 2:
             sentence = " ".join(sentence.split()[: custom_lm.max_positions - 2])
         out = custom_lm.score(sentence, shorten_method="truncate")
