@@ -14,6 +14,7 @@ if __name__ == "__main__":
     parser.add_argument("--in_csv", default="../data/freq_analysis/delta_freqs.csv")
     parser.add_argument("--out_csv", default="../data/word_pairs/output.csv")
     parser.add_argument("--search_text", default="../data/coha/lm_data/2000/en.train")
+    parser.add_argument("--models_dir", default="../models")
     args = parser.parse_args()
 
     # read candidate list - words with high ratio of frequency in 2000s to frequency in first decade of use
@@ -43,14 +44,14 @@ if __name__ == "__main__":
     # calculate per-word surprisals for each sentence using modern data LM
     decade = 2000
     custom_lm = TransformerLanguageModel.from_pretrained(
-        f"models/{decade}",
+        f"{args.models_dir}/{decade}",
         data_name_or_path=f"data/coha/lm_data/{decade}/en-bin",
         checkpoint_file="checkpoint_best.pt",
     )
     custom_lm.eval()
     bpe = fastBPE.fastBPE(
-        f"models/bpe_codes/30k/{decade}/en.codes",
-        f"models/bpe_codes/30k/{decade}/en.vocab",
+        f"{args.models_dir}/bpe_codes/30k/{decade}/en.codes",
+        f"{args.models_dir}/bpe_codes/30k/{decade}/en.vocab",
     )
 
     surprisals = []
@@ -72,14 +73,14 @@ if __name__ == "__main__":
     # using other historical LMs, find words that have high probability in these discovered contexts
     for decade in range(1830, 2000, 10):
         custom_lm = TransformerLanguageModel.from_pretrained(
-            f"models/{decade}",
+            f"{args.models_dir}/{decade}",
             data_name_or_path=f"data/coha/lm_data/{decade}/en-bin",
             checkpoint_file="checkpoint_best.pt",
         )
         custom_lm.eval()
         bpe = fastBPE.fastBPE(
-            f"models/bpe_codes/30k/{decade}/en.codes",
-            f"models/bpe_codes/30k/{decade}/en.vocab",
+            f"{args.models_dir}/bpe_codes/30k/{decade}/en.codes",
+            f"{args.models_dir}/bpe_codes/30k/{decade}/en.vocab",
         )
         predictions = []
         for sentence in tqdm(bpe.apply(df.context)):
