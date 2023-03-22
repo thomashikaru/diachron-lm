@@ -15,6 +15,7 @@ if __name__ == "__main__":
     parser.add_argument("--out_csv", default="../data/word_pairs/output.csv")
     parser.add_argument("--search_text", default="../data/coha/lm_data/2000/en.train")
     parser.add_argument("--models_dir", default="../models")
+    parser.add_argument("--data_dir", default="../data")
     args = parser.parse_args()
 
     # read candidate list - words with high ratio of frequency in 2000s to frequency in first decade of use
@@ -45,7 +46,7 @@ if __name__ == "__main__":
     decade = 2000
     custom_lm = TransformerLanguageModel.from_pretrained(
         f"{args.models_dir}/{decade}",
-        data_name_or_path=f"data/coha/lm_data/{decade}/en-bin",
+        data_name_or_path=f"{args.data_dir}/coha/lm_data/{decade}/en-bin",
         checkpoint_file="checkpoint_best.pt",
     )
     custom_lm.eval()
@@ -74,7 +75,7 @@ if __name__ == "__main__":
     for decade in range(1830, 2000, 10):
         custom_lm = TransformerLanguageModel.from_pretrained(
             f"{args.models_dir}/{decade}",
-            data_name_or_path=f"data/coha/lm_data/{decade}/en-bin",
+            data_name_or_path=f"{args.data_dir}/coha/lm_data/{decade}/en-bin",
             checkpoint_file="checkpoint_best.pt",
         )
         custom_lm.eval()
