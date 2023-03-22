@@ -11,11 +11,19 @@ import re
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--in_csv", default="../data/freq_analysis/delta_freqs.csv")
-    parser.add_argument("--out_csv", default="../data/word_pairs/output.csv")
-    parser.add_argument("--search_text", default="../data/coha/lm_data/2000/en.train")
-    parser.add_argument("--models_dir", default="../models")
-    parser.add_argument("--data_dir", default="../data")
+    parser.add_argument(
+        "--in_csv",
+        default="/home/thclark/diachron-lm/data/freq_analysis/delta_freqs.csv",
+    )
+    parser.add_argument(
+        "--out_csv", default="/home/thclark/diachron-lm/data/word_pairs/output.csv"
+    )
+    parser.add_argument(
+        "--search_text",
+        default="/home/thclark/diachron-lm/data/coha/lm_data/2000/en.train",
+    )
+    parser.add_argument("--models_dir", default="/home/thclark/diachron-lm/models")
+    parser.add_argument("--data_dir", default="/home/thclark/diachron-lm/data")
     args = parser.parse_args()
 
     # read candidate list - words with high ratio of frequency in 2000s to frequency in first decade of use
