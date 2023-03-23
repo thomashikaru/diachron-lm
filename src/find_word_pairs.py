@@ -24,12 +24,14 @@ if __name__ == "__main__":
     )
     parser.add_argument("--models_dir", default="/home/thclark/diachron-lm/models")
     parser.add_argument("--data_dir", default="/home/thclark/diachron-lm/data")
-    parser.add_argument("--count", type=int, default=250)
+    parser.add_argument("--candidate_count", type=int, default=100)
+    parser.add_argument("--shortlist_count", type=int, default=250)
+    parser.add_argument("--top_k", type=int, default=10)
     args = parser.parse_args()
 
     # read candidate list - words with high ratio of frequency in 2000s to frequency in first decade of use
     df = pd.read_csv(args.in_csv)
-    words = df.word.iloc[-25:]
+    words = df.word.iloc[-args.candidate_count :]
 
     # find sentences containing a candidate word
     data = []
@@ -48,8 +50,8 @@ if __name__ == "__main__":
                     )
     df = pd.DataFrame(data)
     df["wc"] = df.groupby("word")["word"].transform("count")
-    df = df[df.wc >= args.count]
-    df = df.groupby("word").sample(n=args.count).reset_index()
+    df = df[df.wc >= args.shortlist_count]
+    df = df.groupby("word").sample(n=args.shortlist_count).reset_index()
 
     # calculate per-word surprisals for each sentence using modern data LM
     decade = 2000
@@ -82,6 +84,7 @@ if __name__ == "__main__":
     )
 
     # using other historical LMs, find words that have high probability in these discovered contexts
+    explode_colnames = []
     for decade in range(1830, 2000, 10):
         custom_lm = TransformerLanguageModel.from_pretrained(
             f"{args.models_dir}/{decade}",
@@ -99,11 +102,19 @@ if __name__ == "__main__":
                 sentence = " ".join(sentence.split()[: custom_lm.max_positions - 2])
             tokens = custom_lm.encode(sentence).unsqueeze(0)
             logprobs, extra = custom_lm.models[0](tokens)
-            top_k_ids = logprobs[0, -2, :].argsort(descending=True)[0].item()
-            decoded = custom_lm.decode([top_k_ids])
+            top_k_ids = (
+                logprobs[0, -2, :].argsort(descending=True)[: args.top_k].tolist()
+            )
+            decoded = [custom_lm.decode([w]) for w in top_k_ids]
             predictions.append(decoded)
         colname = f"top_pred_{decade}"
+        explode_colnames.append(colname)
         df[colname] = predictions
 
+    ranks = [list(range(1, args.top_k + 1))] * len(df)
+    df["rank"] = ranks
+    explode_colnames.append("rank")
+
+    df = df.explode(explode_colnames)
     df.to_csv(args.out_csv, index=False)
 
