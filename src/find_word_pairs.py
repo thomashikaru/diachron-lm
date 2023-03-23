@@ -24,6 +24,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("--models_dir", default="/home/thclark/diachron-lm/models")
     parser.add_argument("--data_dir", default="/home/thclark/diachron-lm/data")
+    parser.add_argument("--count", type=int, default=250)
     args = parser.parse_args()
 
     # read candidate list - words with high ratio of frequency in 2000s to frequency in first decade of use
@@ -47,8 +48,8 @@ if __name__ == "__main__":
                     )
     df = pd.DataFrame(data)
     df["wc"] = df.groupby("word")["word"].transform("count")
-    df = df[df.wc >= 100]
-    df = df.groupby("word").sample(n=100).reset_index()
+    df = df[df.wc >= args.count]
+    df = df.groupby("word").sample(n=args.count).reset_index()
 
     # calculate per-word surprisals for each sentence using modern data LM
     decade = 2000
@@ -73,10 +74,11 @@ if __name__ == "__main__":
 
     # identify contexts that are highly predictive of candidate word (surprisal < threshold)
     df = (
-        df.sort_values("surprisal", ascending=False)
+        df.sort_values("surprisal", ascending=True)
         .groupby("word")
         .head(10)
         .reset_index()
+        .sort_values("word")
     )
 
     # using other historical LMs, find words that have high probability in these discovered contexts
