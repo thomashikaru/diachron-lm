@@ -8,6 +8,7 @@ import argparse
 from tqdm import tqdm
 import fastBPE
 import re
+import string
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -20,13 +21,34 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--search_text",
-        default="/home/thclark/diachron-lm/data/coha/lm_data/2000/en.train",
+        default="/home/thclark/diachron-lm/data/coha/lm_data/2000/en.test",
     )
     parser.add_argument("--models_dir", default="/home/thclark/diachron-lm/models")
     parser.add_argument("--data_dir", default="/home/thclark/diachron-lm/data")
-    parser.add_argument("--candidate_count", type=int, default=100)
-    parser.add_argument("--shortlist_count", type=int, default=250)
-    parser.add_argument("--top_k", type=int, default=10)
+    parser.add_argument(
+        "--candidate_count",
+        type=int,
+        default=200,
+        help="number of diachronically usage-increasing words to consider",
+    )
+    parser.add_argument(
+        "--shortlist_count",
+        type=int,
+        default=50,
+        help="number of shortlist sentences (containing candidate words) to consider",
+    )
+    parser.add_argument(
+        "--top_n",
+        type=int,
+        default=5,
+        help="number of top_n predictive contexts to save per candidate word, from the shortlist",
+    )
+    parser.add_argument(
+        "--top_k",
+        type=int,
+        default=10,
+        help="number of top_k completions to save per context",
+    )
     args = parser.parse_args()
 
     # read candidate list - words with high ratio of frequency in 2000s to frequency in first decade of use
@@ -36,6 +58,8 @@ if __name__ == "__main__":
     # find sentences containing a candidate word
     data = []
     for word in words:
+        if any(p in word for p in string.punctuation):
+            continue
         rx = re.compile(rf".+\b{word}\b")
         with open(args.search_text) as f:
             for line in f:
@@ -78,7 +102,7 @@ if __name__ == "__main__":
     df = (
         df.sort_values("surprisal", ascending=True)
         .groupby("word")
-        .head(10)
+        .head(args.top_n)
         .reset_index()
         .sort_values("word")
     )
