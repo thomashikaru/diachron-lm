@@ -405,6 +405,36 @@ rule next_word_pred_all:
         expand("data/next_word_pred/model_results/{decade}/predictions.csv", decade=DECADES),
 
 
+rule next_word_pred_scientific:
+    input:
+        "models/{decade}/checkpoint_last.pt",
+        "data/next_word_pred/scientific.txt",
+    output:
+        "data/next_word_pred/model_results/{decade}/predictions_scientific.csv",
+    resources:
+        mem_mb=8000,
+        runtime=60,
+    conda:
+        "rus"
+    shell:
+        """
+        export LD_LIBRARY_PATH=~/.conda/envs/rus/lib
+        mkdir -p data/next_word_pred/model_results/{wildcards.decade}
+        fastBPE/fast getvocab data/coha/lm_data/{wildcards.decade}/en-bpe/en.train > models/bpe_codes/30k/{wildcards.decade}/en.vocab
+        cd src
+        python next_word_pred.py --checkpoint_dir /home/thclark/diachron-lm/models/{wildcards.decade} \
+            --data_dir /home/thclark/diachron-lm/data/coha/lm_data/{wildcards.decade}/en-bin \
+            --test_file /home/thclark/diachron-lm/data/next_word_pred/scientific.txt \
+            --codes_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.codes \
+            --vocab_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.vocab \
+            --top_k_out_file /home/thclark/diachron-lm/data/next_word_pred/model_results/{wildcards.decade}/predictions_scientific.csv
+        """
+
+rule next_word_pred_scientific_all:
+    input:
+        expand("data/next_word_pred/model_results/{decade}/predictions_scientific.csv", decade=DECADES),
+
+
 rule find_word_pairs:
     input:
         "data/freq_analysis/delta_freqs.csv"

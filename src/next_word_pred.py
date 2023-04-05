@@ -38,6 +38,7 @@ if __name__ == "__main__":
     # read data
     with open(args.test_file, "r") as f:
         lines = f.read().splitlines()
+        lines = list(filter(lambda x: not x.startswith("#"), lines))
     lines = bpe.apply(lines)
 
     # get hidden representations
