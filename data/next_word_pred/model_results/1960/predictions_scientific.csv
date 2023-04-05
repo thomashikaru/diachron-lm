@@ -1,0 +1,501 @@
+context,top_k_ids,top_k_decoded,k
+objects fall to the ground due to the force of,4,the,1
+objects fall to the ground due to the force of,302,light,2
+objects fall to the ground due to the force of,61,their,3
+objects fall to the ground due to the force of,11,a,4
+objects fall to the ground due to the force of,21,his,5
+objects fall to the ground due to the force of,5760,gravity,6
+objects fall to the ground due to the force of,5021,radiation,7
+objects fall to the ground due to the force of,46,one,8
+objects fall to the ground due to the force of,87,its,9
+objects fall to the ground due to the force of,152,those,10
+objects fall to the ground due to the force of,81,some,11
+objects fall to the ground due to the force of,39,this,12
+objects fall to the ground due to the force of,26,UNK,13
+objects fall to the ground due to the force of,43,an,14
+objects fall to the ground due to the force of,104,our,15
+objects fall to the ground due to the force of,425,change,16
+objects fall to the ground due to the force of,353,matter,17
+objects fall to the ground due to the force of,91,two,18
+objects fall to the ground due to the force of,5452,particles,19
+objects fall to the ground due to the force of,373,de@@,20
+objects fall to the ground due to the force of,115,these,21
+objects fall to the ground due to the force of,15,that,22
+objects fall to the ground due to the force of,41,her,23
+objects fall to the ground due to the force of,168,three,24
+objects fall to the ground due to the force of,1679,events,25
+the smallest planet in the solar system was given the name,9,"""",1
+the smallest planet in the solar system was given the name,7,of,2
+the smallest planet in the solar system was given the name,5,",",3
+the smallest planet in the solar system was given the name,1613,x@@,4
+the smallest planet in the solar system was given the name,6,.,5
+the smallest planet in the solar system was given the name,830,lo@@,6
+the smallest planet in the solar system was given the name,8,and,7
+the smallest planet in the solar system was given the name,26,UNK,8
+the smallest planet in the solar system was given the name,68,',9
+the smallest planet in the solar system was given the name,464,e,10
+the smallest planet in the solar system was given the name,28,?,11
+the smallest planet in the solar system was given the name,628,earth,12
+the smallest planet in the solar system was given the name,10,to,13
+the smallest planet in the solar system was given the name,73,:,14
+the smallest planet in the solar system was given the name,330,name,15
+the smallest planet in the solar system was given the name,385,i@@,16
+the smallest planet in the solar system was given the name,660,z@@,17
+the smallest planet in the solar system was given the name,34,by,18
+the smallest planet in the solar system was given the name,920,h@@,19
+the smallest planet in the solar system was given the name,19,for,20
+the smallest planet in the solar system was given the name,757,m@@,21
+the smallest planet in the solar system was given the name,4,the,22
+the smallest planet in the solar system was given the name,93,back,23
+the smallest planet in the solar system was given the name,1016,ne@@,24
+the smallest planet in the solar system was given the name,11,a,25
+water molecules are made of hydrogen and,22593,helium,1
+water molecules are made of hydrogen and,5577,oxygen,2
+water molecules are made of hydrogen and,8157,carbon,3
+water molecules are made of hydrogen and,6611,hydrogen,4
+water molecules are made of hydrogen and,4,the,5
+water molecules are made of hydrogen and,42,are,6
+water molecules are made of hydrogen and,1954,tin,7
+water molecules are made of hydrogen and,11,a,8
+water molecules are made of hydrogen and,1428,iron,9
+water molecules are made of hydrogen and,15,that,10
+water molecules are made of hydrogen and,79,then,11
+water molecules are made of hydrogen and,5,",",12
+water molecules are made of hydrogen and,61,their,13
+water molecules are made of hydrogen and,1087,lead,14
+water molecules are made of hydrogen and,89,other,15
+water molecules are made of hydrogen and,883,therefore,16
+water molecules are made of hydrogen and,18,is,17
+water molecules are made of hydrogen and,12,in,18
+water molecules are made of hydrogen and,7,of,19
+water molecules are made of hydrogen and,26,UNK,20
+water molecules are made of hydrogen and,57,which,21
+water molecules are made of hydrogen and,10,to,22
+water molecules are made of hydrogen and,10290,nickel,23
+water molecules are made of hydrogen and,553,form,24
+water molecules are made of hydrogen and,19894,carbohydr@@,25
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",4,the,1
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",5,",",2
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",42,are,3
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",12,in,4
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",187,each,5
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",100,even,6
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",33,they,7
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",11,a,8
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",77,can,9
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",251,yet,10
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",67,so,11
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",883,therefore,12
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",29,at,13
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",45,we,14
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",18,is,15
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",15,that,16
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",1126,inter@@,17
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",16,it,18
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",84,only,19
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",188,both,20
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",79,then,21
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",39,this,22
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",152,those,23
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",91,two,24
+"the three phases of matter are soli@@ d@@ , liqui@@ d@@ , and",52,there,25
+the largest organ in the human body is the,2260,largest,1
+the largest organ in the human body is the,9,"""",2
+the largest organ in the human body is the,2681,brain,3
+the largest organ in the human body is the,528,living,4
+the largest organ in the human body is the,3008,inner,5
+the largest organ in the human body is the,481,human,6
+the largest organ in the human body is the,3202,atomic,7
+the largest organ in the human body is the,2323,greek,8
+the largest organ in the human body is the,10541,nucleus,9
+the largest organ in the human body is the,278,air,10
+the largest organ in the human body is the,26,UNK,11
+the largest organ in the human body is the,238,small,12
+the largest organ in the human body is the,559,heart,13
+the largest organ in the human body is the,354,large,14
+the largest organ in the human body is the,843,single,15
+the largest organ in the human body is the,4174,so-called,16
+the largest organ in the human body is the,274,voice,17
+the largest organ in the human body is the,301,national,18
+the largest organ in the human body is the,1032,central,19
+the largest organ in the human body is the,156,world,20
+the largest organ in the human body is the,1126,inter@@,21
+the largest organ in the human body is the,185,great,22
+the largest organ in the human body is the,422,body,23
+the largest organ in the human body is the,215,united,24
+the largest organ in the human body is the,119,most,25
+brain cells are also known as,4,the,1
+brain cells are also known as,9,"""",2
+brain cells are also known as,482,p@@,3
+brain cells are also known as,11,a,4
+brain cells are also known as,625,ro@@,5
+brain cells are also known as,8604,mammals,6
+brain cells are also known as,1030,car@@,7
+brain cells are also known as,152,those,8
+brain cells are also known as,3899,cy@@,9
+brain cells are also known as,8213,bac@@,10
+brain cells are also known as,2923,por@@,11
+brain cells are also known as,679,co@@,12
+brain cells are also known as,723,g@@,13
+brain cells are also known as,11880,uranium,14
+brain cells are also known as,8630,gon@@,15
+brain cells are also known as,2217,bal@@,16
+brain cells are also known as,652,an@@,17
+brain cells are also known as,1613,x@@,18
+brain cells are also known as,4699,lac@@,19
+brain cells are also known as,962,me@@,20
+brain cells are also known as,380,e@@,21
+brain cells are also known as,1733,her@@,22
+brain cells are also known as,1786,ph@@,23
+brain cells are also known as,666,ma@@,24
+brain cells are also known as,13674,cater@@,25
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",5230,symbol,1
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",439,major,2
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",9,"""",3
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",1215,key,4
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",3010,permanent,5
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",185,great,6
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",85,new,7
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",246,part,8
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",924,serious,9
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",9435,menace,10
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",238,small,11
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",2845,minor,12
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",1980,prime,13
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",537,dead,14
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",301,national,15
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",553,form,16
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",275,kind,17
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",123,good,18
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",3185,waste,19
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",1769,danger,20
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",3365,vital,21
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",499,problem,22
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",3708,valuable,23
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",2180,threat,24
+"despite laying egg@@ s@@ , the plat@@ y@@ pus is still considered a",310,political,25
+the number of bones in the human body is two hundred and,3016,forty,1
+the number of bones in the human body is two hundred and,1914,fifty,2
+the number of bones in the human body is two hundred and,8124,eighty,3
+the number of bones in the human body is two hundred and,435,six,4
+the number of bones in the human body is two hundred and,276,four,5
+the number of bones in the human body is two hundred and,461,ten,6
+the number of bones in the human body is two hundred and,1347,twenty,7
+the number of bones in the human body is two hundred and,318,five,8
+the number of bones in the human body is two hundred and,168,three,9
+the number of bones in the human body is two hundred and,1615,thirty,10
+the number of bones in the human body is two hundred and,11097,ninety-@@,11
+the number of bones in the human body is two hundred and,786,seven,12
+the number of bones in the human body is two hundred and,11,a,13
+the number of bones in the human body is two hundred and,2043,fifteen,14
+the number of bones in the human body is two hundred and,1992,twelve,15
+the number of bones in the human body is two hundred and,5788,forty-@@,16
+the number of bones in the human body is two hundred and,9112,eighty-@@,17
+the number of bones in the human body is two hundred and,791,eight,18
+the number of bones in the human body is two hundred and,5090,fifty-@@,19
+the number of bones in the human body is two hundred and,5229,sixteen,20
+the number of bones in the human body is two hundred and,91,two,21
+the number of bones in the human body is two hundred and,46,one,22
+the number of bones in the human body is two hundred and,4197,twenty-five,23
+the number of bones in the human body is two hundred and,20792,twenty-nine,24
+the number of bones in the human body is two hundred and,13651,twenty-three,25
+true or false@@ : the smallest prime number is five@@ .,2,,1
+true or false@@ : the smallest prime number is five@@ .,9,"""",2
+true or false@@ : the smallest prime number is five@@ .,68,',3
+true or false@@ : the smallest prime number is five@@ .,624,),4
+true or false@@ : the smallest prime number is five@@ .,26,UNK,5
+true or false@@ : the smallest prime number is five@@ .,6,.,6
+true or false@@ : the smallest prime number is five@@ .,5,",",7
+true or false@@ : the smallest prime number is five@@ .,66,;,8
+true or false@@ : the smallest prime number is five@@ .,340,//,9
+true or false@@ : the smallest prime number is five@@ .,11,a,10
+true or false@@ : the smallest prime number is five@@ .,4,the,11
+true or false@@ : the smallest prime number is five@@ .,211,|,12
+true or false@@ : the smallest prime number is five@@ .,73,:,13
+true or false@@ : the smallest prime number is five@@ .,28,?,14
+true or false@@ : the smallest prime number is five@@ .,8,and,15
+true or false@@ : the smallest prime number is five@@ .,18,is,16
+true or false@@ : the smallest prime number is five@@ .,31,but,17
+true or false@@ : the smallest prime number is five@@ .,125,very,18
+true or false@@ : the smallest prime number is five@@ .,15,that,19
+true or false@@ : the smallest prime number is five@@ .,39,this,20
+true or false@@ : the smallest prime number is five@@ .,47,or,21
+true or false@@ : the smallest prime number is five@@ .,65,who,22
+true or false@@ : the smallest prime number is five@@ .,17,was,23
+true or false@@ : the smallest prime number is five@@ .,508,myself,24
+true or false@@ : the smallest prime number is five@@ .,42,are,25
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,2,,1
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,9,"""",2
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,624,),3
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,68,',4
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,4,the,5
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,5,",",6
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,8,and,7
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,66,;,8
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,7,of,9
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,26,UNK,10
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,211,|,11
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,6,.,12
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,39,this,13
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,11,a,14
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,31,but,15
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,16,it,16
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,419,washington,17
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,15,that,18
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,340,//,19
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,24,with,20
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,12,in,21
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,80,now,22
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,239,general,23
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,52,there,24
+true or false@@ : the largest land animal is the A@@ fr@@ ican eleph@@ an@@ t.,28,?,25
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,2,,1
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,68,',2
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,9,"""",3
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,624,),4
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,5,",",5
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,66,;,6
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,4,the,7
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,26,UNK,8
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,6,.,9
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,8,and,10
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,38,from,11
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,11,a,12
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,18,is,13
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,39,this,14
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,15,that,15
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,7,of,16
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,125,very,17
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,12,in,18
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,10,to,19
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,62,when,20
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,511,field,21
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,117,little,22
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,340,//,23
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,73,:,24
+true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,24,with,25
+true or false@@ : the sun is smaller than the earth@@ .,2,,1
+true or false@@ : the sun is smaller than the earth@@ .,9,"""",2
+true or false@@ : the sun is smaller than the earth@@ .,68,',3
+true or false@@ : the sun is smaller than the earth@@ .,624,),4
+true or false@@ : the sun is smaller than the earth@@ .,26,UNK,5
+true or false@@ : the sun is smaller than the earth@@ .,5,",",6
+true or false@@ : the sun is smaller than the earth@@ .,66,;,7
+true or false@@ : the sun is smaller than the earth@@ .,6,.,8
+true or false@@ : the sun is smaller than the earth@@ .,340,//,9
+true or false@@ : the sun is smaller than the earth@@ .,211,|,10
+true or false@@ : the sun is smaller than the earth@@ .,4,the,11
+true or false@@ : the sun is smaller than the earth@@ .,11,a,12
+true or false@@ : the sun is smaller than the earth@@ .,8,and,13
+true or false@@ : the sun is smaller than the earth@@ .,28,?,14
+true or false@@ : the sun is smaller than the earth@@ .,73,:,15
+true or false@@ : the sun is smaller than the earth@@ .,71,more,16
+true or false@@ : the sun is smaller than the earth@@ .,125,very,17
+true or false@@ : the sun is smaller than the earth@@ .,31,but,18
+true or false@@ : the sun is smaller than the earth@@ .,7,of,19
+true or false@@ : the sun is smaller than the earth@@ .,238,small,20
+true or false@@ : the sun is smaller than the earth@@ .,38,from,21
+true or false@@ : the sun is smaller than the earth@@ .,72,will,22
+true or false@@ : the sun is smaller than the earth@@ .,213,once,23
+true or false@@ : the sun is smaller than the earth@@ .,117,little,24
+true or false@@ : the sun is smaller than the earth@@ .,18,is,25
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,2,,1
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,68,',2
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,9,"""",3
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,624,),4
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,26,UNK,5
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,6,.,6
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,5,",",7
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,66,;,8
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,4,the,9
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,11,a,10
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,73,:,11
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,8,and,12
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,340,//,13
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,28,?,14
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,18,is,15
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,211,|,16
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,39,this,17
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,65,who,18
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,31,but,19
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,17,was,20
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,15,that,21
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,508,myself,22
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,47,or,23
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,125,very,24
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the smallest prime number is five@@ .,7,of,25
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,2,,1
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,9,"""",2
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,68,',3
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,624,),4
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,26,UNK,5
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,5,",",6
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,6,.,7
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,66,;,8
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,4,the,9
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,7,of,10
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,211,|,11
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,8,and,12
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,340,//,13
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,28,?,14
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,125,very,15
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,11,a,16
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,39,this,17
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,244,better,18
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,419,washington,19
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,71,more,20
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,31,but,21
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,15,that,22
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,238,small,23
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,80,now,24
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the largest land animal is the african eleph@@ an@@ t.,85,new,25
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,2,,1
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,68,',2
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,9,"""",3
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,624,),4
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,5,",",5
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,26,UNK,6
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,66,;,7
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,4,the,8
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,6,.,9
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,8,and,10
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,39,this,11
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,117,little,12
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,11,a,13
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,211,|,14
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,340,//,15
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,18,is,16
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,125,very,17
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,38,from,18
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,7,of,19
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,28,?,20
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,13,he,21
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,71,more,22
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,15,that,23
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,88,than,24
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,73,:,25
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,2,,1
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,9,"""",2
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,68,',3
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,624,),4
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,26,UNK,5
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,5,",",6
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,6,.,7
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,66,;,8
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,340,//,9
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,4,the,10
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,211,|,11
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,11,a,12
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,73,:,13
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,28,?,14
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,8,and,15
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,7,of,16
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,125,very,17
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,31,but,18
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,71,more,19
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,38,from,20
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,18,is,21
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,39,this,22
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,83,!,23
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,72,will,24
+true or false@@ : the tallest mountain on earth is mount ever@@ est@@ . tru@@ e. true or false@@ : the sun is smaller than the earth@@ .,117,little,25
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,2,,1
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,68,',2
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,9,"""",3
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,624,),4
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,6,.,5
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,5,",",6
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,26,UNK,7
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,66,;,8
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,340,//,9
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,73,:,10
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,8,and,11
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,11,a,12
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,211,|,13
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,4,the,14
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,47,or,15
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,28,?,16
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,18,is,17
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,31,but,18
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,508,myself,19
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,42,are,20
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,15,that,21
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,39,this,22
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,125,very,23
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,17,was,24
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the smallest prime number is five@@ .,59,if,25
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,2,,1
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,9,"""",2
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,68,',3
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,624,),4
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,26,UNK,5
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,5,",",6
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,66,;,7
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,6,.,8
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,4,the,9
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,211,|,10
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,8,and,11
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,7,of,12
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,340,//,13
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,28,?,14
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,39,this,15
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,11,a,16
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,125,very,17
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,15,that,18
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,244,better,19
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,419,washington,20
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,31,but,21
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,73,:,22
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,80,now,23
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,71,more,24
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the largest land animal is the african eleph@@ an@@ t.,85,new,25
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,2,,1
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,68,',2
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,9,"""",3
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,624,),4
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,5,",",5
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,26,UNK,6
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,4,the,7
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,66,;,8
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,8,and,9
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,6,.,10
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,11,a,11
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,18,is,12
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,38,from,13
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,39,this,14
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,73,:,15
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,13,he,16
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,15,that,17
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,340,//,18
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,62,when,19
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,125,very,20
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,7,of,21
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,28,?,22
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,117,little,23
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,211,|,24
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : moss only grows on the north side of tree trun@@ k@@ s.,19,for,25
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,2,,1
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,68,',2
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,9,"""",3
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,624,),4
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,26,UNK,5
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,66,;,6
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,5,",",7
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,6,.,8
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,340,//,9
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,211,|,10
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,73,:,11
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,4,the,12
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,28,?,13
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,11,a,14
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,8,and,15
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,7,of,16
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,125,very,17
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,31,but,18
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,42,are,19
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,72,will,20
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,18,is,21
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,39,this,22
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,71,more,23
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,109,here,24
+true or false@@ : twelve is divi@@ sible by five@@ . false@@ . true or false@@ : the sun is smaller than the earth@@ .,38,from,25
