@@ -17,6 +17,11 @@ if __name__ == "__main__":
         default="/home/thclark/diachron-lm/data/freq_analysis/delta_freqs.csv",
     )
     parser.add_argument(
+        "--freq_csv",
+        default="/home/thclark/diachron-lm/data/freq_analysis/word_counts.csv",
+    )
+    parser.add_argument("--freq_thresh", default=1e-6)
+    parser.add_argument(
         "--out_csv", default="/home/thclark/diachron-lm/data/word_pairs/output.csv"
     )
     parser.add_argument(
@@ -53,26 +58,64 @@ if __name__ == "__main__":
 
     # read candidate list - words with high ratio of frequency in 2000s to frequency in first decade of use
     df = pd.read_csv(args.in_csv)
-    words = df.word.iloc[-args.candidate_count :]
+    high_freq_ratio_words = df.word.iloc[-args.candidate_count :]
+    mid_freq_ratio_words = df.query(
+        "delta_freq <= 1.25 & delta_freq >= 0.75"
+    ).word.sample(n=args.candidate_count)
+    low_freq_ratio_words = df.word.iloc[-args.candidate_count :]
+    words = pd.concat(
+        [high_freq_ratio_words, mid_freq_ratio_words, low_freq_ratio_words]
+    ).astype(str)
+    categories = (
+        ["increasing"] * len(high_freq_ratio_words)
+        + ["flat"] * len(mid_freq_ratio_words)
+        + ["decreasing"] * len(low_freq_ratio_words)
+    )
 
     # find sentences containing a candidate word
     data = []
-    for word in words:
+
+    # read sentences to be searched
+    sentences = pd.read_csv(
+        args.search_text, sep="\t", names=["sentence"], dtype={"sentence": str}
+    )
+
+    # apply filters to sentences (remove sentences with weird punctuation, low-frequency words, etc.)
+    freqs = pd.read_csv(args.freq_csv)
+    decade_count = freqs.decade.nunique()
+    freqs = freqs.groupby("word").agg({"decade": list, "frequency": list}).reset_index()
+    freqs = freqs[freqs.decade.apply(len) == decade_count]
+    freqs = freqs[freqs.frequency.apply(lambda x: all(y > args.freq_thresh for y in x))]
+    freq_words = set(freqs.word)
+    print("Number of words in high-freq list:", len(set(freq_words)))
+    sentences = sentences[
+        sentences.sentence.apply(lambda x: all(y in freq_words for y in x.split()))
+    ].reset_index(drop=True)
+
+    # for each candidate word extract sentences containing that word
+    for word, category in zip(words, categories):
+        # exclude words containing punctuation
         if any(p in word for p in string.punctuation):
             continue
-        rx = re.compile(rf".+\b{word}\b")
-        with open(args.search_text) as f:
-            for line in f:
-                match = re.search(rx, line)
-                if match:
-                    data.append(
-                        {
-                            "word": word,
-                            "sentence": match.group(0),
-                            "context": match.group(0)[0 : -len(word) - 1],
-                        }
-                    )
-    df = pd.DataFrame(data)
+        rx = re.compile(rf"(.+\b{word}\b)")
+        df_sub = (
+            sentences.sentence.str.extract(rx)
+            .copy()
+            .dropna()
+            .rename(columns={0: "sentence"})
+        )
+        df_sub["context"] = df_sub.sentence.apply(lambda x: x[0 : -len(word) - 1])
+        df_sub["word"] = word
+        df_sub["category"] = category
+        try:
+            df_sub = df_sub[df_sub.sentence.apply(lambda x: x.split().index(word) >= 5)]
+        except ValueError as err:
+            print(
+                err,
+                "\nThis should not happen because `word` should be guaranteed to be in the sentence.",
+            )
+        data.append(df_sub)
+    df = pd.concat(data)
     df["wc"] = df.groupby("word")["word"].transform("count")
     df = df[df.wc >= args.shortlist_count]
     df = df.groupby("word").sample(n=args.shortlist_count).reset_index()
@@ -98,7 +141,7 @@ if __name__ == "__main__":
         surprisals.append(-1 * out["positional_scores"][-1])
     df["surprisal"] = surprisals
 
-    # identify contexts that are highly predictive of candidate word (surprisal < threshold)
+    # identify contexts that are highly predictive of candidate word
     df = (
         df.sort_values("surprisal", ascending=True)
         .groupby("word")
