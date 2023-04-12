@@ -62,7 +62,7 @@ if __name__ == "__main__":
     mid_freq_ratio_words = df.query(
         "delta_freq <= 1.25 & delta_freq >= 0.75"
     ).word.sample(n=args.candidate_count)
-    low_freq_ratio_words = df.word.iloc[-args.candidate_count :]
+    low_freq_ratio_words = df.word.iloc[: args.candidate_count]
     words = pd.concat(
         [high_freq_ratio_words, mid_freq_ratio_words, low_freq_ratio_words]
     ).astype(str)
@@ -89,7 +89,7 @@ if __name__ == "__main__":
     freq_words = set(freqs.word)
     print("Number of words in high-freq list:", len(set(freq_words)))
     sentences = sentences[
-        sentences.sentence.apply(lambda x: all(y in freq_words for y in x.split()))
+        sentences.sentence.apply(lambda x: all(y in freq_words for y in x.split()[:-1]))
     ].reset_index(drop=True)
 
     # for each candidate word extract sentences containing that word
