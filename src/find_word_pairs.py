@@ -90,7 +90,7 @@ if __name__ == "__main__":
     print("Number of words in high-freq list:", len(set(freq_words)))
     sentences = sentences[
         sentences.sentence.apply(
-            lambda x: sum(y in freq_words for y in x.split()[:-1]) <= 3
+            lambda x: sum(y not in freq_words for y in x.split()[:-1]) <= 3
         )
     ].reset_index(drop=True)
 
