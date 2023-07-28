@@ -396,12 +396,12 @@ rule intensifiers:
         cd src
         python score_sentences.py --checkpoint_dir /home/thclark/diachron-lm/models/{wildcards.decade} \
             --data_dir /home/thclark/diachron-lm/data/coha/lm_data/{wildcards.decade}/en-bin \
-            --test_file /home/thclark/diachron-lm/data/intensifiers/{corpus}.txt \
-            --out_file /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/surprisals/{corpus}.pt \
+            --test_file /home/thclark/diachron-lm/data/intensifiers/{wildcards.corpus}.txt \
+            --out_file /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/surprisals/{wildcards.corpus}.pt \
             --codes_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.codes \
             --vocab_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.vocab \
             --plot_dir /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/surprisals \
-            --emb_out_file /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/embeddings/{corpus}.pt
+            --emb_out_file /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/embeddings/{wildcards.corpus}.pt
         """
 
 rule intensifiers_all:
@@ -424,8 +424,8 @@ rule intensifier_embeddings:
         mkdir -p img/intensifiers
         cd src
         python intensifier_embeddings.py \
-        --file_pattern "../data/intensifiers/model_results/{wildcards.decade}/embeddings/{corpus}.pt" \
-        --reference_file ../data/intensifiers/{corpus}.txt \
+        --file_pattern "../data/intensifiers/model_results/{wildcards.decade}/embeddings/{wildcards.corpus}.pt" \
+        --reference_file ../data/intensifiers/{wildcards.corpus}.txt \
         --save_dir ../img/intensifiers \
         --decade {wildcards.decade} \
         --token_pos -2
