@@ -375,6 +375,67 @@ rule plot_embeddings_all:
 
 
 # model results for sanity check data
+rule intensifiers:
+    input:
+        "models/{decade}/checkpoint_last.pt",
+        "data/sanity_check/longer_forms.txt",
+        "data/sanity_check/shorter_forms.txt",
+    output:
+        "data/sanity_check/model_results/{decade}/surprisals/longer_forms.pt",
+        "data/sanity_check/model_results/{decade}/surprisals/shorter_forms.pt",
+        "data/sanity_check/model_results/{decade}/embeddings/longer_forms.pt",
+        "data/sanity_check/model_results/{decade}/embeddings/shorter_forms.pt",
+    resources:
+        mem_mb=8000,
+        runtime=60,
+    conda:
+        "rus"
+    shell:
+        """
+        export LD_LIBRARY_PATH=~/.conda/envs/rus/lib
+        mkdir -p data/intensifiers/model_results/{wildcards.decade}/surprisals
+        mkdir -p data/intensifiers/model_results/{wildcards.decade}/embeddings
+        fastBPE/fast getvocab data/coha/lm_data/{wildcards.decade}/en-bpe/en.train > models/bpe_codes/30k/{wildcards.decade}/en.vocab
+        cd src
+        python score_sentences.py --checkpoint_dir /home/thclark/diachron-lm/models/{wildcards.decade} \
+            --data_dir /home/thclark/diachron-lm/data/coha/lm_data/{wildcards.decade}/en-bin \
+            --test_file /home/thclark/diachron-lm/data/intensifiers/sentences.txt \
+            --out_file /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/surprisals/sentences.pt \
+            --codes_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.codes \
+            --vocab_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.vocab \
+            --plot_dir /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/surprisals \
+            --emb_out_file /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/embeddings/sentences.pt
+        """
+
+rule intensifiers_all:
+    input:
+        expand("data/intensifiers/model_results/{decade}/surprisals/sentences.pt", decade=DECADES),
+        expand("data/intensifiers/model_results/{decade}/embeddings/sentences.pt", decade=DECADES),
+
+
+rule intensifier_embeddings:
+    input:
+        "data/intensifiers/model_results/{decade}/embeddings/sentences.pt",
+    output:
+        "img/embeddings_{decade}.png"
+    shell:
+        """
+        mkdir -p img/intensifiers
+        cd src
+        python intensifier_embeddings.py \
+        --file_pattern "../data/intensifiers/model_results/{wildcards.decade}/embeddings/sentences.pt" \
+        --reference_file ../data/intensifiers/sentences.txt \
+        --save_dir ../img/intensifiers \
+        --decade {wildcards.decade} \
+        --token_pos -2
+        """
+
+rule intensifier_embeddings_all:
+    input:
+        expand("img/intensifiers/embeddings_{decade}.png", decade=DECADES)
+
+
+# model results for sanity check data
 rule next_word_pred:
     input:
         "models/{decade}/checkpoint_last.pt",
