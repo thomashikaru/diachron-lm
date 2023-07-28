@@ -415,7 +415,7 @@ rule intensifier_embeddings:
         "data/intensifiers/model_results/{decade}/embeddings/{corpus}.pt",
         "src/intensifier_embeddings.py",
     output:
-        "img/intensifiers/embeddings_{decade}.png"
+        "img/intensifiers/embeddings_{corpus}_{decade}.png"
     resources:
         mem_mb=2000,
         runtime=60,
