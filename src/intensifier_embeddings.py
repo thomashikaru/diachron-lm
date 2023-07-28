@@ -84,7 +84,7 @@ if __name__ == "__main__":
         xticklabels=True,
         yticklabels=True,
         annot=True,
-        fmt=".2f",
+        fmt=".3f",
         annot_kws={"size": 14},
     )
     plt.title("Cosine Similarity of Intensifiers in Context", fontsize=20)

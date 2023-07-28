@@ -1,6 +1,8 @@
-I didn’t buy it because it was not expensive.
-I didn’t buy it because it was somewhat expensive.
-I didn’t buy it because it was really expensive.
-I didn’t buy it because it was very expensive.
-I didn’t buy it because it was extremely expensive.
-I didn’t buy it because it was too expensive.
+I decided not to buy it because it was not expensive.
+I decided not to buy it because it was somewhat expensive.
+I decided not to buy it because it was slightly expensive.
+I decided not to buy it because it was really expensive.
+I decided not to buy it because it was very expensive.
+I decided not to buy it because it was highly expensive.
+I decided not to buy it because it was extremely expensive.
+I decided not to buy it because it was too expensive.

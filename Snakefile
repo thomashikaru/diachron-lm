@@ -380,8 +380,8 @@ rule intensifiers:
         "models/{decade}/checkpoint_last.pt",
         "data/intensifiers/sentences.txt",
     output:
-        "data/intensifiers/model_results/{decade}/surprisals/sentences.pt",
-        "data/intensifiers/model_results/{decade}/embeddings/sentences.pt",
+        "data/intensifiers/model_results/{decade}/surprisals/{corpus}.pt",
+        "data/intensifiers/model_results/{decade}/embeddings/{corpus}.pt",
     resources:
         mem_mb=8000,
         runtime=60,
@@ -396,23 +396,23 @@ rule intensifiers:
         cd src
         python score_sentences.py --checkpoint_dir /home/thclark/diachron-lm/models/{wildcards.decade} \
             --data_dir /home/thclark/diachron-lm/data/coha/lm_data/{wildcards.decade}/en-bin \
-            --test_file /home/thclark/diachron-lm/data/intensifiers/sentences.txt \
-            --out_file /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/surprisals/sentences.pt \
+            --test_file /home/thclark/diachron-lm/data/intensifiers/{corpus}.txt \
+            --out_file /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/surprisals/{corpus}.pt \
             --codes_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.codes \
             --vocab_path /home/thclark/diachron-lm/models/bpe_codes/30k/{wildcards.decade}/en.vocab \
             --plot_dir /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/surprisals \
-            --emb_out_file /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/embeddings/sentences.pt
+            --emb_out_file /home/thclark/diachron-lm/data/intensifiers/model_results/{wildcards.decade}/embeddings/{corpus}.pt
         """
 
 rule intensifiers_all:
     input:
-        expand("data/intensifiers/model_results/{decade}/surprisals/sentences.pt", decade=DECADES),
-        expand("data/intensifiers/model_results/{decade}/embeddings/sentences.pt", decade=DECADES),
+        expand("data/intensifiers/model_results/{decade}/surprisals/{corpus}.pt", decade=DECADES, corpus=["sentences", "sentences_2", "sentences_3"]),
+        expand("data/intensifiers/model_results/{decade}/embeddings/{corpus}.pt", decade=DECADES, corpus=["sentences", "sentences_2", "sentences_3"]),
 
 
 rule intensifier_embeddings:
     input:
-        "data/intensifiers/model_results/{decade}/embeddings/sentences.pt",
+        "data/intensifiers/model_results/{decade}/embeddings/{corpus}.pt",
         "src/intensifier_embeddings.py",
     output:
         "img/intensifiers/embeddings_{decade}.png"
@@ -424,8 +424,8 @@ rule intensifier_embeddings:
         mkdir -p img/intensifiers
         cd src
         python intensifier_embeddings.py \
-        --file_pattern "../data/intensifiers/model_results/{wildcards.decade}/embeddings/sentences.pt" \
-        --reference_file ../data/intensifiers/sentences.txt \
+        --file_pattern "../data/intensifiers/model_results/{wildcards.decade}/embeddings/{corpus}.pt" \
+        --reference_file ../data/intensifiers/{corpus}.txt \
         --save_dir ../img/intensifiers \
         --decade {wildcards.decade} \
         --token_pos -2
@@ -433,7 +433,7 @@ rule intensifier_embeddings:
 
 rule intensifier_embeddings_all:
     input:
-        expand("img/intensifiers/embeddings_{decade}.png", decade=DECADES)
+        expand("img/intensifiers/embeddings_{corpus}_{decade}.png", decade=DECADES, corpus=["sentences", "sentences_2", "sentences_3"])
 
 
 # model results for sanity check data
