@@ -413,6 +413,7 @@ rule intensifiers_all:
 rule intensifier_embeddings:
     input:
         "data/intensifiers/model_results/{decade}/embeddings/sentences.pt",
+        "src/intensifier_embeddings.py",
     output:
         "img/intensifiers/embeddings_{decade}.png"
     resources:

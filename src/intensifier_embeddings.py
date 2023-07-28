@@ -8,6 +8,7 @@ from tqdm import tqdm
 import glob
 import torch
 from sklearn.manifold import TSNE
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 if __name__ == "__main__":
@@ -71,4 +72,26 @@ if __name__ == "__main__":
         dpi=150,
         bbox_inches="tight",
     )
+
+    cos_sims = cosine_similarity(X)
+
+    plt.clf()
+    df_plot = pd.DataFrame(cos_sims, index=words, columns=words)
+    fig = plt.subplots(figsize=(8, 8))
+    ax = sns.heatmap(
+        df_plot,
+        cmap="plasma",
+        xticklabels=True,
+        yticklabels=True,
+        annot=True,
+        fmt=".2f",
+        annot_kws={"size": 14},
+    )
+    plt.title("Cosine Similarity of Intensifiers in Context", fontsize=20)
+    plt.xlabel("Intensifier", fontsize=16)
+    plt.ylabel("Intensifier", fontsize=16)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    ax.xaxis.tick_top()
+    plt.savefig(os.path.join(args.save_dir, f"heatmap_{args.decade}"), dpi=180)
 
