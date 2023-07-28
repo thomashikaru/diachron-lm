@@ -378,13 +378,10 @@ rule plot_embeddings_all:
 rule intensifiers:
     input:
         "models/{decade}/checkpoint_last.pt",
-        "data/sanity_check/longer_forms.txt",
-        "data/sanity_check/shorter_forms.txt",
+        "data/intensifiers/sentences.txt",
     output:
-        "data/sanity_check/model_results/{decade}/surprisals/longer_forms.pt",
-        "data/sanity_check/model_results/{decade}/surprisals/shorter_forms.pt",
-        "data/sanity_check/model_results/{decade}/embeddings/longer_forms.pt",
-        "data/sanity_check/model_results/{decade}/embeddings/shorter_forms.pt",
+        "data/intensifiers/model_results/{decade}/surprisals/sentences.pt",
+        "data/intensifiers/model_results/{decade}/embeddings/sentences.pt",
     resources:
         mem_mb=8000,
         runtime=60,
