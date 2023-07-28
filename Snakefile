@@ -417,7 +417,10 @@ rule intensifier_embeddings:
     input:
         "data/intensifiers/model_results/{decade}/embeddings/sentences.pt",
     output:
-        "img/embeddings_{decade}.png"
+        "img/intensifiers/embeddings_{decade}.png"
+    resources:
+        mem_mb=2000,
+        runtime=60,
     shell:
         """
         mkdir -p img/intensifiers
