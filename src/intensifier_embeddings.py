@@ -15,7 +15,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--file_pattern")
     parser.add_argument("--reference_file")
-    parser.add_argument("--save_dir")
+    parser.add_argument("--out_file")
     parser.add_argument("--out_csv")
     parser.add_argument("--layer_num", type=int, default=-1)
     parser.add_argument("--token_pos", type=int, default=-1)
