@@ -415,7 +415,8 @@ rule intensifier_embeddings:
         "data/intensifiers/model_results/{decade}/embeddings/{corpus}.pt",
         "src/intensifier_embeddings.py",
     output:
-        "img/intensifiers/embeddings_{corpus}_{decade}.png"
+        "img/intensifiers/{corpus}_{decade}_embeddings.png",
+        "img/intensifiers/{corpus}_{decade}_heatmap.png",
     resources:
         mem_mb=2000,
         runtime=60,
@@ -426,14 +427,15 @@ rule intensifier_embeddings:
         python intensifier_embeddings.py \
         --file_pattern "../data/intensifiers/model_results/{wildcards.decade}/embeddings/{wildcards.corpus}.pt" \
         --reference_file ../data/intensifiers/{wildcards.corpus}.txt \
-        --save_dir ../img/intensifiers \
+        --out_file ../img/intensifiers/{wildcards.corpus}_{wildcards.decade} \
         --decade {wildcards.decade} \
         --token_pos -2
         """
 
 rule intensifier_embeddings_all:
     input:
-        expand("img/intensifiers/embeddings_{corpus}_{decade}.png", decade=DECADES, corpus=["sentences", "sentences_2", "sentences_3"])
+        expand("img/intensifiers/{corpus}_{decade}_embeddings.png", decade=DECADES, corpus=["sentences", "sentences_2", "sentences_3"]),
+        expand("img/intensifiers/{corpus}_{decade}_heatmap.png", decade=DECADES, corpus=["sentences", "sentences_2", "sentences_3"]),
 
 
 # model results for sanity check data

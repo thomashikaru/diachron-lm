@@ -68,9 +68,7 @@ if __name__ == "__main__":
             color="black",
         )
     plt.savefig(
-        os.path.join(args.save_dir, f"embeddings_{args.decade}"),
-        dpi=150,
-        bbox_inches="tight",
+        args.out_file + "_embeddings", dpi=180, bbox_inches="tight",
     )
 
     cos_sims = cosine_similarity(X)
@@ -93,5 +91,5 @@ if __name__ == "__main__":
     plt.xticks(fontsize=14)
     plt.yticks(fontsize=14)
     ax.xaxis.tick_top()
-    plt.savefig(os.path.join(args.save_dir, f"heatmap_{args.decade}"), dpi=180)
+    plt.savefig(args.out_file + "_heatmap", dpi=180, bbox_inches="tight")
 
