@@ -430,7 +430,7 @@ rule intensifier_embeddings:
         --reference_file ../data/intensifiers/{wildcards.corpus}.txt \
         --out_file ../img/intensifiers/{wildcards.corpus}_{wildcards.decade} \
         --decade {wildcards.decade} \
-        --token_pos -2
+        --token_pos -3
         """
 
 rule intensifier_embeddings_all:
