@@ -1,8 +1,8 @@
-She thought that the book was not interesting.
-She thought that the book was somewhat interesting.
-She thought that the book was slightly interesting.
-She thought that the book was really interesting.
-She thought that the book was very interesting.
-She thought that the book was highly interesting.
-She thought that the book was extremely interesting.
-She thought that the book was too interesting.
+she thought that the book was not interesting .
+she thought that the book was somewhat interesting .
+she thought that the book was slightly interesting .
+she thought that the book was really interesting .
+she thought that the book was very interesting .
+she thought that the book was highly interesting .
+she thought that the book was extremely interesting .
+she thought that the book was too interesting .

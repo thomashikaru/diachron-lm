@@ -425,7 +425,8 @@ rule intensifier_embeddings:
         mkdir -p img/intensifiers
         cd src
         python intensifier_embeddings.py \
-        --file_pattern "../data/intensifiers/model_results/{wildcards.decade}/embeddings/{wildcards.corpus}.pt" \
+        --embedding_file ../data/intensifiers/model_results/{wildcards.decade}/embeddings/{wildcards.corpus}.pt \
+        --surprisal_file ../data/intensifiers/model_results/{wildcards.decade}/surprisals/{wildcards.corpus}.pt \
         --reference_file ../data/intensifiers/{wildcards.corpus}.txt \
         --out_file ../img/intensifiers/{wildcards.corpus}_{wildcards.decade} \
         --decade {wildcards.decade} \

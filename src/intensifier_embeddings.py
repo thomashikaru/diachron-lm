@@ -13,7 +13,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--file_pattern")
+    parser.add_argument("--embedding_file")
+    parser.add_argument("--surprisal_file")
     parser.add_argument("--reference_file")
     parser.add_argument("--out_file")
     parser.add_argument("--out_csv")
@@ -35,16 +36,16 @@ if __name__ == "__main__":
         words.append(sentence.split()[args.token_pos])
 
     # embeddings
-    filenames = glob.glob(args.file_pattern)
-    for filename in filenames:
-        data = torch.load(filename)
-        assert len(data) == len(words), f"{len(data)} {len(words)}"
-        for word, item in zip(words, data):
-            embedding = (
-                item[args.layer_num][args.token_pos, :, :].detach().squeeze().numpy()
-            )
-            embeddings.append(embedding)
-            df_data.append({"word": word, "embedding": embedding})
+    embs = torch.load(args.embedding_file)
+    _, token_lists = torch.load(args.surprisal_file)
+
+    assert len(embs) == len(words), f"{len(embs)} {len(words)}"
+    for word, item, token_list in zip(words, embs, token_lists):
+        assert word in token_list, f"{token_list}, {word}"
+        idx = token_list.index(word)
+        embedding = item[args.layer_num][idx, :, :].detach().squeeze().numpy()
+        embeddings.append(embedding)
+        df_data.append({"word": word, "embedding": embedding})
 
     df = pd.DataFrame(df_data)
     # df.to_csv(args.out_csv, index=False)
@@ -88,8 +89,7 @@ if __name__ == "__main__":
     plt.title("Cosine Similarity of Intensifiers in Context", fontsize=20)
     plt.xlabel("Intensifier", fontsize=16)
     plt.ylabel("Intensifier", fontsize=16)
-    plt.xticks(fontsize=14)
-    plt.yticks(fontsize=14)
-    ax.xaxis.tick_top()
+    plt.xticks(fontsize=14, rotation=45, ha="right")
+    plt.yticks(fontsize=14, rotation=-45, va="center")
     plt.savefig(args.out_file + "_heatmap", dpi=180, bbox_inches="tight")
 
